@@ -10,7 +10,6 @@
     "rules": {
         "react/display-name": 0,
         "react-hooks/rules-of-hooks": "error"
-        // "react-hooks/exhaustive-deps": "warn"
     },
     "globals": {
         "GLOBALS": false,
@@ -27,12 +26,20 @@
         "sourceType": "module",
         "ecmaFeatures": {
             "jsx": true,
-            "es6": true
+            "es6": true,
         }
     },
     "env": {
         "es6": true,
-        "browser": true,
-        "node": true
+        "node": true,
+        "browser": true
+    },
+    "settings": {
+        "import/resolver": {
+            "alias": [
+                ["atoms", "./src/atoms"],
+                ["constants", "./src/constants"]
+            ]
+        }
     }
 }

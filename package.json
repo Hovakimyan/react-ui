@@ -1,0 +1,47 @@
+{
+  "name": "react-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "start-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hovakimyan/react-ui.git"
+  },
+  "author": "Sergey Hovakimyan <hovakimyan.serg@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hovakimyan/react-ui/issues"
+  },
+  "homepage": "https://github.com/Hovakimyan/react-ui#readme",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@storybook/addon-a11y": "^5.1.9",
+    "@storybook/addon-actions": "^5.1.9",
+    "@storybook/addon-knobs": "^5.1.9",
+    "@storybook/addon-notes": "^5.1.9",
+    "@storybook/addon-viewport": "^5.1.9",
+    "@storybook/react": "^5.3.17",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-flowtype": "^3.11.1",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-react": "^7.14.2",
+    "eslint-plugin-react-hooks": "^3.0.0",
+    "flow": "^0.2.3",
+    "flow-bin": "^0.121.0",
+    "prettier": "^1.16.4"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.0.1"
+  }
+}
