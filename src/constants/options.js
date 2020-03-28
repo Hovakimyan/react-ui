@@ -1,4 +1,4 @@
-import { colors, sizes } from 'consts/index'
+import { colors, sizes } from 'constants/index'
 
 export const buttonTypeOptions = {
     primary: 'primary',

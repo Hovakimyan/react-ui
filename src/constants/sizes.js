@@ -1,25 +1,21 @@
 export const fontSizes = {
-    xxxSmall: '8px',
     xxSmall: '10px',
     xSmall: '12px',
     small: '14px',
     medium: '16px',
     large: '18px',
     xLarge: '22px',
-    xxLarge: '26px',
-    huge: '32px'
+    xxLarge: '26px'
 }
 
 export const iconSizes = {
-    xxxSmall: '10px',
     xxSmall: '12px',
     xSmall: '14px',
     small: '16px',
     medium: '18px',
     large: '20px',
     xLarge: '24px',
-    xxLarge: '28px',
-    huge: '34px'
+    xxLarge: '28px'
 }
 
 export const buttons = {

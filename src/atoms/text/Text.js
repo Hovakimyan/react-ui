@@ -3,14 +3,20 @@
 import React from 'react'
 import { StyledText } from './styled'
 import type { Props } from './types'
-import { defaults } from 'constants'
+
+export const textDefaults = {
+    size: 'medium',
+    weight: 400,
+    color: 'secondaryExtraDark',
+    hoverColor: 'secondarySemiDark'
+}
 
 const Text = (props: Props): React$Element<HTMLDivElement> => {
     const {
-        weight = defaults.textDefaults.weight,
-        size = defaults.textDefaults.size,
-        color = defaults.textDefaults.color,
-        align = defaults.textDefaults.align,
+        weight = textDefaults.weight,
+        size = textDefaults.size,
+        color = textDefaults.color,
+        align = textDefaults.align,
         noSelect = false,
         ...rest
     } = props
