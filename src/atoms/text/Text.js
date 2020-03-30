@@ -20,6 +20,7 @@ const Text = (props: Props): React$Element<HTMLDivElement> => {
         noSelect = false,
         ...rest
     } = props
+
     return (
         <StyledText
             size={size}

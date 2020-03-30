@@ -13,7 +13,7 @@ const themes = {
 
 const getTheme = (theme: ThemeTypes) => ({
     sizes,
-    theme: themes[theme]
+    colors: themes[theme]
 })
 
 const Theme = ({ children }: Props) => {
