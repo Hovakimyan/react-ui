@@ -9,7 +9,8 @@
     ],
     "rules": {
         "react/display-name": 0,
-        "react-hooks/rules-of-hooks": "error"
+        "react-hooks/rules-of-hooks": "error",
+        "complexity": ["error", { "max": 15 }]
     },
     "globals": {
         "GLOBALS": false,
@@ -44,3 +45,23 @@
         }
     }
 }
+
+/**
+module.exports = {
+  "extends": "standard",
+  "rules": {
+    "semi": [2, "always"],
+    "key-spacing": ["error", {
+      "mode": "minimum"
+    }],
+    "no-trailing-spaces": ["error", {
+      "ignoreComments": true
+    }],
+    complexity: ['error', { max: 15 }]
+  }
+}
+
+
+ 49m 7s
+
+

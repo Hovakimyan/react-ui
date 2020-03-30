@@ -4,8 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "start-storybook",
     "create": "node scripts/create.js",
-    "start": "start-storybook"
+    "check-flow": "./node_modules/.bin/flow ./src"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
   },
   "repository": {
     "type": "git",
@@ -38,6 +44,8 @@
     "eslint-plugin-react-hooks": "^3.0.0",
     "flow": "^0.2.3",
     "flow-bin": "^0.121.0",
+    "husky": "^4.2.3",
+    "lint-staged": "^10.1.0",
     "prettier": "^1.16.4",
     "yargs": "^15.3.1"
   },
