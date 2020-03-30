@@ -7,6 +7,7 @@ module.exports = {
         config.resolve = {
             alias: {
                 atoms: path.resolve(__dirname, '../src/atoms'),
+                theme: path.resolve(__dirname, '../src/theme'),
                 constants: path.resolve(__dirname, '../src/constants')
             }
         }

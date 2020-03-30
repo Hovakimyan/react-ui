@@ -38,6 +38,7 @@
         "import/resolver": {
             "alias": [
                 ["atoms", "./src/atoms"],
+                ["theme", "./src/theme"],
                 ["constants", "./src/constants"]
             ]
         }
