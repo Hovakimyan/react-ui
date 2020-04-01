@@ -11,7 +11,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run check-flow"
+      "pre-commit": "check-flow"
     }
   },
   "repository": {
