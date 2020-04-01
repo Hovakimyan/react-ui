@@ -10,7 +10,7 @@ export const StyledText = styled.div`
     margin: 0;
     display: block;
     color: ${({ color, theme }) => theme.colors[color]};
-    font-size: ${({ size, theme }) => theme.sizes.font[size] || `${size}px`};
+    font-size: ${({ size, theme }) => theme.fonts.sizes[size] || `${size}px`};
     font-weight: ${({ weight }) => weight};
     text-align: ${({ align }) => align};
     ${getEllipsis};
