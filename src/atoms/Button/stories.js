@@ -2,8 +2,9 @@ import React from 'react'
 import { Button } from './index'
 import Theme from 'theme'
 import { storiesOf } from '@storybook/react'
-import { withKnobs } from '@storybook/addon-knobs'
+import { text, select, boolean, withKnobs } from '@storybook/addon-knobs'
 import { jsxDecorator } from 'storybook-addon-jsx'
+import { buttonTypeOptions, buttonSizeOptions } from 'constants/options'
 
 const stories = storiesOf('Atoms|Button', module)
 
@@ -12,6 +13,26 @@ stories.addDecorator(jsxDecorator)
 
 stories.add('Default', () => (
     <Theme>
-        <Button>Hello Button</Button>
+        <div
+            style={{
+                margin: '20px',
+                width: '100%',
+                display: 'flex',
+                justifyContent: 'center'
+            }}
+        >
+            <Button
+                // required
+                type={select('Type', buttonTypeOptions, 'primary')}
+                size={select('Size', buttonSizeOptions, 'large')}
+                onClick={console.log}
+                // optional
+                fit={boolean('Is Fit', false)}
+                isFlat={boolean('Is Flat', false)}
+                disabled={boolean('Disabled', false)}
+            >
+                {text('Label', 'BUTTON')}
+            </Button>
+        </div>
     </Theme>
 ))
