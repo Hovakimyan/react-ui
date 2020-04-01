@@ -15,7 +15,8 @@ stories.add('Default', () => (
     <Theme>
         <div
             style={{
-                margin: '20px',
+                padding: '20px',
+                boxSizing: 'border-box',
                 width: '100%',
                 display: 'flex',
                 justifyContent: 'center'
@@ -24,7 +25,7 @@ stories.add('Default', () => (
             <Button
                 // required
                 type={select('Type', buttonTypeOptions, 'primary')}
-                size={select('Size', buttonSizeOptions, 'large')}
+                size={select('Size', buttonSizeOptions, 'medium')}
                 onClick={console.log}
                 // optional
                 fit={boolean('Is Fit', false)}

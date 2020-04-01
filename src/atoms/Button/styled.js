@@ -12,8 +12,9 @@ const getDefaultStyles = ({ type, size, theme, isFlat, fit, weight }) => {
         background: ${theme.buttons.colors[type].normal};
         border-radius: ${isFlat ? 0 : theme.buttons.sizes[size].borderRadius};
         box-shadow: ${isFlat ? 'none' : theme.buttons.colors[type].shadow};
-        display: ${fit ? 'flex' : 'inline-flex'};
+        display: flex;
         font-weight: ${weight};
+        flex-grow: ${fit ? 1 : 0};
     `
 }
 
@@ -55,7 +56,6 @@ export const Button = styled.button`
     align-items: center;
     cursor: pointer;
     flex-shrink: 0;
-    flex-grow: 0;
     line-height: 20px;
     box-sizing: border-box;
     max-width: 100%;
