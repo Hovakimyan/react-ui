@@ -5,8 +5,9 @@ import { StyledText } from './styled'
 import type { Props } from './types'
 
 export const textDefaults = {
-    size: 'medium',
     weight: 400,
+    size: 'medium',
+    align: 'center',
     color: 'secondaryExtraDark',
     hoverColor: 'secondarySemiDark'
 }
@@ -23,12 +24,12 @@ const Text = (props: Props): React$Element<HTMLDivElement> => {
 
     return (
         <StyledText
+            {...rest}
             size={size}
             align={align}
             color={color}
             weight={weight}
             noSelect={noSelect}
-            {...rest}
         >
             {props.children}
         </StyledText>

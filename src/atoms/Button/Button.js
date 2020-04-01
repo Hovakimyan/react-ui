@@ -24,6 +24,7 @@ const Button = ({
 
     return (
         <Styled.Button
+            {...rest}
             ref={refHandler}
             className={className}
             size={size}
@@ -32,7 +33,6 @@ const Button = ({
             disabled={disabled}
             type={type}
             isFlat={isFlat}
-            {...rest}
         >
             {children}
         </Styled.Button>
