@@ -31,6 +31,7 @@
     "@storybook/addon-notes": "^5.1.9",
     "@storybook/addon-viewport": "^5.1.9",
     "@storybook/react": "^5.3.17",
+    "@storybook/storybook-deployer": "^2.8.3",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "eslint": "^6.8.0",
