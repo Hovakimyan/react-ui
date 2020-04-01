@@ -1,3 +1,13 @@
+// @flow
+
+declare type ThemeColorTypes =
+    | 'primary'
+    | 'secondary'
+    | 'info'
+    | 'default'
+    | 'success'
+    | 'warning'
+
 declare type FontSizeType =
     | 'xxSmall'
     | 'xSmall'
