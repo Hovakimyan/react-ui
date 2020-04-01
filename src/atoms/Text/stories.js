@@ -3,11 +3,13 @@ import { Text } from './index'
 import Theme from 'theme'
 import { fontSizeOptions, globalColorOptions } from 'constants/options'
 import { storiesOf } from '@storybook/react'
+import { jsxDecorator } from 'storybook-addon-jsx'
 import { select, boolean, text, withKnobs } from '@storybook/addon-knobs'
 
 const stories = storiesOf('Atoms|Text', module)
 
 stories.addDecorator(withKnobs)
+stories.addDecorator(jsxDecorator)
 
 stories.add('Default', () => (
     <Theme>
