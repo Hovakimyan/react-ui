@@ -5,6 +5,8 @@ import sizes from './sizes'
 import type { Props, ThemeTypes } from './types'
 import { light, dark } from './colors'
 import { ThemeProvider } from 'styled-components'
+import ScrollBarStyles from './styles/scroll-bar'
+import ResetCss from './styles/reset-css'
 
 const themes = {
     light,
@@ -24,6 +26,8 @@ const Theme = ({ children }: Props) => {
             setTheme={setTheme}
             theme={getTheme(light)}
         >
+            <ScrollBarStyles />
+            <ResetCss />
             {children}
         </ThemeProvider>
     )
