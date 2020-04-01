@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "start-storybook",
+    "deploy": "storybook-to-ghpages",
     "create": "node scripts/create.js",
     "check-flow": "./node_modules/.bin/flow ./src"
   },
