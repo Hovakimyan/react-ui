@@ -10,10 +10,10 @@
 ## Structure
 
 Project created with Atomic structure
--- Atoms
--- Molecules
--- Organism
--- helpers // helper methods
+- Atoms
+- Molecules
+- Organism
+- helpers // helper methods
 
 For Typing we use FLOW
 
