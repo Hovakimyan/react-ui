@@ -7,11 +7,11 @@
     "start": "start-storybook",
     "deploy": "storybook-to-ghpages",
     "create": "node scripts/create.js",
-    "check-flow": "./node_modules/.bin/flow ./src"
+    "check-flow": "flow ./src"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "check-flow"
+      "pre-commit": "npm run check-flow"
     }
   },
   "repository": {
