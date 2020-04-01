@@ -15,7 +15,7 @@ Project created with Atomic structure
 - Organism
 - helpers // helper methods
 
-For Typing we use FLOW
+For Typing we use `flow`
 
 ## How to create components
 
