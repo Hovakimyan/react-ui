@@ -2,11 +2,6 @@ import { colors, sizes } from 'constants/index'
 
 export const buttonTypeOptions = {
     primary: 'primary',
-    secondary: 'secondary',
-    Info: 'info',
-    Default: 'default',
-    Success: 'success',
-    warning: 'warning',
     transparent: 'transparent'
 }
 
