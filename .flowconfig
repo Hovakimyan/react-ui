@@ -11,6 +11,7 @@
 [options]
 module.name_mapper='atoms' ->'<PROJECT_ROOT>/src/atoms'
 module.name_mapper='theme' ->'<PROJECT_ROOT>/src/theme'
+module.name_mapper='helpers' ->'<PROJECT_ROOT>/src/helpers'
 module.name_mapper='constants' ->'<PROJECT_ROOT>/src/constants'
 
 [strict]

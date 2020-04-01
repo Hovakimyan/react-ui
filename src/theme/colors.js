@@ -1,3 +1,5 @@
+import { hexToRgbA } from 'helpers/color'
+
 const regularColors = {
     white: '#FFFFFF',
     black: '#000000',
@@ -58,3 +60,27 @@ export const dark = {
     inputLabel: '#7683A7',
     inputText: '#545F7D'
 }
+
+export const getButtonStyles = colors => ({
+    disabled: {
+        color: colors.secondarySemiLight,
+        shadow: 'none',
+        normal: `linear-gradient(0, ${colors.secondaryUltraLight} 0%, ${colors.secondaryExtraLight} 100%)`,
+        hover: `linear-gradient(0, ${colors.secondaryUltraLight} 0%, ${colors.secondaryExtraLight} 100%)`,
+        active: `linear-gradient(0, ${colors.secondaryUltraLight} 0%, ${colors.secondaryExtraLight} 100%)`
+    },
+    primary: {
+        color: colors.white,
+        shadow: '0px 3px 9px 0px rgba(56,125,255,0.5)',
+        normal: `linear-gradient(0, ${colors.primaryDark} 0%, ${colors.primarySemiDark} 100%)`,
+        hover: `linear-gradient(0, ${colors.primaryExtraDark} 0%, ${colors.primaryDark} 100%)`,
+        active: `linear-gradient(0, ${colors.primaryExtraDark} 0%, ${colors.primaryDark} 100%)`
+    },
+    transparent: {
+        color: colors.primaryDark,
+        shadow: 'none',
+        normal: 'transparent',
+        hover: hexToRgbA(colors.primaryDark, 10),
+        active: hexToRgbA(colors.primaryDark, 20)
+    }
+})

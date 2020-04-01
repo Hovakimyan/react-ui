@@ -1,12 +1,6 @@
 // @flow
 
-declare type ThemeColorTypes =
-    | 'primary'
-    | 'secondary'
-    | 'info'
-    | 'default'
-    | 'success'
-    | 'warning'
+declare type ThemeColorTypes = 'primary' | 'transparent'
 
 declare type FontSizeType =
     | 'xxSmall'

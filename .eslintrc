@@ -40,28 +40,9 @@
             "alias": [
                 ["atoms", "./src/atoms"],
                 ["theme", "./src/theme"],
+                ["helpers", "./src/helpers"],
                 ["constants", "./src/constants"]
             ]
         }
     }
 }
-
-/**
-module.exports = {
-  "extends": "standard",
-  "rules": {
-    "semi": [2, "always"],
-    "key-spacing": ["error", {
-      "mode": "minimum"
-    }],
-    "no-trailing-spaces": ["error", {
-      "ignoreComments": true
-    }],
-    complexity: ['error', { max: 15 }]
-  }
-}
-
-
- 49m 7s
-
-

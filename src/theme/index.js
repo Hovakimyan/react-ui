@@ -1,9 +1,9 @@
 // @flow
 
 import React, { useState } from 'react'
-import sizes from './sizes'
+import * as sizes from './sizes'
 import type { Props, ThemeTypes } from './types'
-import { light, dark } from './colors'
+import { light, dark, getButtonStyles } from './colors'
 import { ThemeProvider } from 'styled-components'
 import ScrollBarStyles from './styles/scroll-bar'
 import ResetCss from './styles/reset-css'
@@ -14,8 +14,14 @@ const themes = {
 }
 
 const getTheme = (theme: ThemeTypes) => ({
-    sizes,
-    colors: themes[theme]
+    fonts: {
+        sizes: sizes.font
+    },
+    colors: themes[theme],
+    buttons: {
+        sizes: sizes.button,
+        colors: getButtonStyles(themes[theme])
+    }
 })
 
 const Theme = ({ children }: Props) => {

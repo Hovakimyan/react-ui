@@ -10,26 +10,21 @@ export const font = {
 
 export const button = {
     small: {
-        fontSize: '14px',
+        fontSize: font.small,
         padding: '10px 20px',
         circlePadding: '10px',
-        borderRadius: '25px'
+        borderRadius: '20px'
     },
     medium: {
-        fontSize: '16px',
+        fontSize: font.medium,
         padding: '15px 30px',
         circlePadding: '15px',
-        borderRadius: '25px'
+        borderRadius: '30px'
     },
     large: {
-        fontSize: '18px',
-        padding: '20px 80px',
+        fontSize: font.large,
+        padding: '20px 40px',
         circlePadding: '20px',
-        borderRadius: '30px'
+        borderRadius: '40px'
     }
-}
-
-export default {
-    font,
-    button
 }
