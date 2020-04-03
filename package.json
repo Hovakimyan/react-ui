@@ -1,6 +1,6 @@
 {
-  "name": "atomic-react",
-  "version": "1.0.0",
+  "name": "@hovakimyan/react-ui",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,14 +16,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hovakimyan/atomic-react.git"
+    "url": "git+https://github.com/Hovakimyan/react-ui.git"
   },
   "author": "Sergey Hovakimyan <hovakimyan.serg@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Hovakimyan/atomic-react/issues"
+    "url": "https://github.com/Hovakimyan/react-ui/issues"
   },
-  "homepage": "https://github.com/Hovakimyan/atomic-react#readme",
+  "homepage": "https://github.com/Hovakimyan/react-ui#readme",
   "devDependencies": {
     "@babel/core": "7.9.0",
     "@storybook/addon-a11y": "5.1.9",
