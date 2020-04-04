@@ -50,7 +50,9 @@ export { ${name} }`
             name: 'types',
             content: `// @flow
 
-export type Props = {}\n`
+export type Props = {
+    children: React$Node
+}\n`
         },
         {
             name: 'stories',
