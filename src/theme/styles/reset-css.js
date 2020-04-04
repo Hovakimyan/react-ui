@@ -74,6 +74,15 @@ const ResetCss = createGlobalStyle`
             padding: 0;
         }
     }
+    ::-webkit-input-placeholder { /* Edge */
+      color: ${({ theme }) => theme.colors.secondaryLight};
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+      color: ${({ theme }) => theme.colors.secondaryLight};
+    }
+    ::placeholder {
+      color: ${({ theme }) => theme.colors.secondaryLight};
+    }
 `
 
 export default ResetCss

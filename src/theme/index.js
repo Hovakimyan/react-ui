@@ -3,7 +3,7 @@
 import React, { useState } from 'react'
 import * as sizes from './sizes'
 import type { Props, ThemeTypes } from './types'
-import { light, dark, getButtonStyles } from './colors'
+import { light, dark, getButtonStyles, getInputColors } from './colors'
 import { ThemeProvider } from 'styled-components'
 import ScrollBarStyles from './styles/scroll-bar'
 import ResetCss from './styles/reset-css'
@@ -13,16 +13,23 @@ const themes = {
     dark
 }
 
-const getTheme = (theme: ThemeTypes) => ({
-    fonts: {
-        sizes: sizes.font
-    },
-    colors: themes[theme],
-    buttons: {
-        sizes: sizes.button,
-        colors: getButtonStyles(themes[theme])
+const getTheme = (theme: ThemeTypes) => {
+    const colors = themes[theme]
+    return {
+        fonts: {
+            sizes: sizes.font
+        },
+        colors: colors,
+        inputs: {
+            sizes: sizes.inputs,
+            colors: getInputColors(colors)
+        },
+        buttons: {
+            sizes: sizes.button,
+            colors: getButtonStyles(colors)
+        }
     }
-})
+}
 
 const Theme = ({ children }: Props) => {
     const [light, setTheme] = useState<ThemeTypes>('light')

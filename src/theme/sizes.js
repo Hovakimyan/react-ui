@@ -28,3 +28,21 @@ export const button = {
         borderRadius: '40px'
     }
 }
+
+export const inputs = {
+    small: {
+        fontSize: font.small,
+        padding: '5px',
+        borderRadius: '5px'
+    },
+    medium: {
+        fontSize: font.medium,
+        padding: '10px',
+        borderRadius: '8px'
+    },
+    large: {
+        fontSize: font.large,
+        padding: '15px',
+        borderRadius: '10px'
+    }
+}

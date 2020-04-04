@@ -29,11 +29,7 @@ export const light = {
     secondarySemiLight: '#9AA6C8',
     secondaryLight: '#C1C9E0',
     secondaryExtraLight: '#DEE3F0',
-    secondaryUltraLight: '#EDEFF6',
-    // input
-    inputBorder: '#DDE3F0',
-    inputLabel: '#7683A7',
-    inputText: '#545F7D'
+    secondaryUltraLight: '#EDEFF6'
 }
 
 export const dark = {
@@ -54,27 +50,35 @@ export const dark = {
     secondarySemiLight: '#9AA6C8',
     secondaryLight: '#C1C9E0',
     secondaryExtraLight: '#DEE3F0',
-    secondaryUltraLight: '#EDEFF6',
-    // input
-    inputBorder: '#DDE3F0',
-    inputLabel: '#7683A7',
-    inputText: '#545F7D'
+    secondaryUltraLight: '#EDEFF6'
 }
 
 export const getButtonStyles = colors => ({
     disabled: {
         color: colors.secondarySemiLight,
         shadow: 'none',
-        normal: `linear-gradient(0, ${colors.secondaryUltraLight} 0%, ${colors.secondaryExtraLight} 100%)`,
-        hover: `linear-gradient(0, ${colors.secondaryUltraLight} 0%, ${colors.secondaryExtraLight} 100%)`,
-        active: `linear-gradient(0, ${colors.secondaryUltraLight} 0%, ${colors.secondaryExtraLight} 100%)`
+        normal: `linear-gradient(0, ${colors.secondaryUltraLight} 0%, ${
+            colors.secondaryExtraLight
+        } 100%)`,
+        hover: `linear-gradient(0, ${colors.secondaryUltraLight} 0%, ${
+            colors.secondaryExtraLight
+        } 100%)`,
+        active: `linear-gradient(0, ${colors.secondaryUltraLight} 0%, ${
+            colors.secondaryExtraLight
+        } 100%)`
     },
     primary: {
         color: colors.white,
         shadow: '0px 3px 9px 0px rgba(56,125,255,0.5)',
-        normal: `linear-gradient(0, ${colors.primaryDark} 0%, ${colors.primarySemiDark} 100%)`,
-        hover: `linear-gradient(0, ${colors.primaryExtraDark} 0%, ${colors.primaryDark} 100%)`,
-        active: `linear-gradient(0, ${colors.primaryExtraDark} 0%, ${colors.primaryDark} 100%)`
+        normal: `linear-gradient(0, ${colors.primaryDark} 0%, ${
+            colors.primarySemiDark
+        } 100%)`,
+        hover: `linear-gradient(0, ${colors.primaryExtraDark} 0%, ${
+            colors.primaryDark
+        } 100%)`,
+        active: `linear-gradient(0, ${colors.primaryExtraDark} 0%, ${
+            colors.primaryDark
+        } 100%)`
     },
     transparent: {
         color: colors.primaryDark,
@@ -82,5 +86,24 @@ export const getButtonStyles = colors => ({
         normal: 'transparent',
         hover: hexToRgbA(colors.primaryDark, 10),
         active: hexToRgbA(colors.primaryDark, 20)
+    }
+})
+
+export const getInputColors = colors => ({
+    border: {
+        active: colors.secondary,
+        disabled: colors.secondaryExtraLight
+    },
+    label: {
+        active: colors.secondaryDark,
+        disabled: colors.secondarySemiDark
+    },
+    text: {
+        active: colors.secondaryDark,
+        disabled: colors.secondarySemiDark
+    },
+    background: {
+        active: colors.white,
+        disabled: colors.secondaryUltraLight
     }
 })
