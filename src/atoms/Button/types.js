@@ -1,7 +1,7 @@
 // @flow
 export type Props = {
     type: ThemeColorTypes,
-    size: FontSizeType,
+    size: SizeTypes,
     onClick: Function,
     children: React$Node,
     refHandler?: Function,
