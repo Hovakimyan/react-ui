@@ -2,6 +2,8 @@
 
 declare type ThemeColorTypes = 'primary' | 'transparent'
 
+declare type SizeTypes = 'small' | 'medium' | 'large'
+
 declare type FontSizeType =
     | 'xxSmall'
     | 'xSmall'
