@@ -7,7 +7,7 @@
     "start": "start-storybook",
     "deploy": "storybook-to-ghpages",
     "create": "node scripts/create.js",
-    "flow-check": "./node_modules/.bin/flow"
+    "flow-check": "./node_modules/.bin/flow ./src"
   },
   "husky": {
     "hooks": {

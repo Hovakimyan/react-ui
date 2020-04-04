@@ -9,6 +9,7 @@ const getDefaultStyles = ({ size, theme, isFlat, isFit, weight }) => {
     return css`
         color: ${colors.text.active};
         border: 1px solid ${colors.border.active};
+        height: ${sizes.height};
         padding: ${sizes.padding};
         font-size: ${sizes.fontSize};
         background: ${colors.background.active};

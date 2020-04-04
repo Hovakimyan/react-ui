@@ -5,13 +5,16 @@ import styled, { css } from 'styled-components'
 import { noSelect, ellipsis } from 'constants/styles'
 
 const getDefaultStyles = ({ type, size, theme, isFlat, fit, weight }) => {
+    const sizes = theme.buttons.sizes[size]
+    const colors = theme.buttons.colors[type]
     return css`
-        padding: ${theme.buttons.sizes[size].padding};
-        font-size: ${theme.buttons.sizes[size].fontSize};
-        color: ${theme.buttons.colors[type].color};
-        background: ${theme.buttons.colors[type].normal};
-        border-radius: ${isFlat ? 0 : theme.buttons.sizes[size].borderRadius};
-        box-shadow: ${isFlat ? 'none' : theme.buttons.colors[type].shadow};
+        padding: ${sizes.padding};
+        height: ${sizes.height};
+        font-size: ${sizes.fontSize};
+        color: ${colors.color};
+        background: ${colors.normal};
+        border-radius: ${isFlat ? 0 : sizes.borderRadius};
+        box-shadow: ${isFlat ? 'none' : colors.shadow};
         display: flex;
         font-weight: ${weight};
         flex-grow: ${fit ? 1 : 0};

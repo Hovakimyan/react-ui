@@ -11,19 +11,22 @@ export const font = {
 export const button = {
     small: {
         fontSize: font.small,
-        padding: '10px 20px',
+        height: '38px',
+        padding: '0 20px',
         circlePadding: '10px',
         borderRadius: '20px'
     },
     medium: {
         fontSize: font.medium,
-        padding: '15px 30px',
+        height: '44px',
+        padding: '0 30px',
         circlePadding: '15px',
         borderRadius: '30px'
     },
     large: {
         fontSize: font.large,
-        padding: '20px 40px',
+        height: '50px',
+        padding: '0 40px',
         circlePadding: '20px',
         borderRadius: '40px'
     }
@@ -32,17 +35,20 @@ export const button = {
 export const inputs = {
     small: {
         fontSize: font.small,
-        padding: '5px',
-        borderRadius: '5px'
+        height: '38px',
+        padding: '0 5px',
+        borderRadius: '20px'
     },
     medium: {
         fontSize: font.medium,
-        padding: '10px',
-        borderRadius: '8px'
+        height: '44px',
+        padding: '0 10px',
+        borderRadius: '22px'
     },
     large: {
         fontSize: font.large,
-        padding: '15px',
-        borderRadius: '10px'
+        height: '50px',
+        padding: '0 15px',
+        borderRadius: '25px'
     }
 }
