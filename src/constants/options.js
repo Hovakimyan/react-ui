@@ -30,6 +30,11 @@ export const rangeSliderStyleOptions = {
     dark: 'dark'
 }
 
+export const themeOptions = {
+    Light: 'light',
+    Dark: 'dark'
+}
+
 export const cornerOptions = {
     Rounded: 'rounded',
     Sharp: 'sharp'

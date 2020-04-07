@@ -69,7 +69,7 @@ export const getButtonStyles = colors => ({
     },
     primary: {
         color: colors.white,
-        shadow: '0px 3px 9px 0px rgba(56,125,255,0.5)',
+        shadow: `0px 3px 9px 0px ${hexToRgbA(colors.primaryDark, 50)}`,
         normal: `linear-gradient(0, ${colors.primaryDark} 0%, ${
             colors.primarySemiDark
         } 100%)`,
@@ -89,10 +89,10 @@ export const getButtonStyles = colors => ({
     }
 })
 
-export const cardShadow = {
-    shallow: '0px 6px 12px 0px rgba(0,82,224,0.1);',
-    dense: '0px 3px 6px 0px rgba(0,82,224,0.2);'
-}
+export const getCardShadow = colors => ({
+    shallow: `0px 6px 12px 0px ${hexToRgbA(colors.primaryExtraDark, 10)};`,
+    dense: `0px 3px 6px 0px ${hexToRgbA(colors.primaryExtraDark, 20)};`
+})
 
 export const getInputColors = colors => ({
     border: {
