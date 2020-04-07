@@ -89,6 +89,11 @@ export const getButtonStyles = colors => ({
     }
 })
 
+export const cardShadow = {
+    shallow: '0px 6px 12px 0px rgba(0,82,224,0.1);',
+    dense: '0px 3px 6px 0px rgba(0,82,224,0.2);'
+}
+
 export const getInputColors = colors => ({
     border: {
         active: colors.secondary,

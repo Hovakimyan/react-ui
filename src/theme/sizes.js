@@ -52,3 +52,8 @@ export const inputs = {
         borderRadius: '25px'
     }
 }
+
+export const cardCorner = {
+    rounded: '10px',
+    sharp: 0
+}
