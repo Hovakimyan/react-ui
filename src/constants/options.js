@@ -30,6 +30,16 @@ export const rangeSliderStyleOptions = {
     dark: 'dark'
 }
 
+export const cornerOptions = {
+    Rounded: 'rounded',
+    Sharp: 'sharp'
+}
+
+export const shadowOptions = {
+    Dense: 'dense',
+    Shallow: 'shallow'
+}
+
 export const fontSizeOptions = Object.keys(sizes.fontSizes).reduce(
     (acc, item) => {
         acc[item] = item

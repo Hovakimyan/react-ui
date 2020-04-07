@@ -2,8 +2,9 @@ import React from 'react'
 import { Paper } from './index'
 import Theme from 'theme'
 import { storiesOf } from '@storybook/react'
-import { withKnobs } from '@storybook/addon-knobs'
+import { select, withKnobs } from '@storybook/addon-knobs'
 import { jsxDecorator } from 'storybook-addon-jsx'
+import { cornerOptions, shadowOptions } from 'constants/options'
 
 const stories = storiesOf('Atoms|Paper', module)
 
@@ -21,7 +22,12 @@ stories.add('Default', () => (
                 justifyContent: 'center'
             }}
         >
-            <Paper>Hello Paper</Paper>
+            <Paper
+                corner={select('Corner', cornerOptions, 'rounded')}
+                shadow={select('Shadow', shadowOptions, 'dense')}
+            >
+                Hello Paper
+            </Paper>
         </div>
     </Theme>
 ))
