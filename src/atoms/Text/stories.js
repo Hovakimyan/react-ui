@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text } from './index'
 import Theme from 'theme'
-import { fontSizeOptions, globalColorOptions } from 'constants/options'
+import { fontSizeOptions, colorOptions } from 'constants/options'
 import { storiesOf } from '@storybook/react'
 import { jsxDecorator } from 'storybook-addon-jsx'
 import { select, boolean, text, withKnobs } from '@storybook/addon-knobs'
@@ -16,7 +16,7 @@ stories.add('Default', () => (
         <Text
             ellipsis={boolean('Ellipsis', false)}
             noSelect={boolean('Disable Select', false)}
-            color={select('Color', globalColorOptions, 'primaryDark')}
+            color={select('Color', colorOptions, 'primaryDark')}
             size={select('Size', fontSizeOptions, 'medium')}
         >
             {text('Text', 'Hello Button')}

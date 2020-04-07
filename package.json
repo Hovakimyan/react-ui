@@ -6,12 +6,11 @@
   "scripts": {
     "start": "start-storybook",
     "deploy": "storybook-to-ghpages",
-    "create": "node scripts/create.js",
-    "flow-check": "./node_modules/.bin/flow ./src"
+    "create": "node scripts/create.js"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run flow-check && lint-staged"
+      "pre-commit": "flow check && lint-staged"
     }
   },
   "repository": {

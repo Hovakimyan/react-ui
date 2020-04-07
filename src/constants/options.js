@@ -1,33 +1,14 @@
-import { colors, sizes } from 'constants/index'
+import { sizes } from 'constants/index'
 
 export const buttonTypeOptions = {
     primary: 'primary',
     transparent: 'transparent'
 }
 
-export const toolTipTypeOptions = {
-    primary: 'primary',
-    secondary: 'secondary',
-    default: 'default'
-}
-
 export const buttonSizeOptions = {
     Small: 'small',
     Medium: 'medium',
     Large: 'large'
-}
-
-export const inputOptions = {
-    Email: 'email',
-    Text: 'text',
-    Password: 'password',
-    Number: 'number',
-    Tel: 'tel'
-}
-
-export const rangeSliderStyleOptions = {
-    light: 'light',
-    dark: 'dark'
 }
 
 export const themeOptions = {
@@ -45,27 +26,34 @@ export const shadowOptions = {
     Shallow: 'shallow'
 }
 
+export const colorOptions = {
+    primaryExtraDark: 'primaryExtraDark',
+    primaryDark: 'primaryDark',
+    primarySemiDark: 'primarySemiDark',
+    primary: 'primary',
+    primarySemiLight: 'primarySemiLight',
+    primaryLight: 'primaryLight',
+    primaryExtraLight: 'primaryExtraLight',
+    secondaryExtraDark: 'secondaryExtraDark',
+    secondaryDark: 'secondaryDark',
+    secondarySemiDark: 'secondarySemiDark',
+    secondary: 'secondary',
+    secondarySemiLight: 'secondarySemiLight',
+    secondaryLight: 'secondaryLight',
+    secondaryExtraLight: 'secondaryExtraLight',
+    secondaryUltraLight: 'secondaryUltraLight',
+    white: 'white',
+    black: 'black',
+    green: 'green',
+    purple: 'purple',
+    yellow: 'yellow',
+    coral: 'coral',
+    cyan: 'cyan',
+    red: 'red',
+    None: ''
+}
+
 export const fontSizeOptions = Object.keys(sizes.fontSizes).reduce(
-    (acc, item) => {
-        acc[item] = item
-        return acc
-    },
-    {
-        None: ''
-    }
-)
-
-export const iconSizeOptions = Object.keys(sizes.iconSizes).reduce(
-    (acc, item) => {
-        acc[item] = item
-        return acc
-    },
-    {
-        None: ''
-    }
-)
-
-export const globalColorOptions = Object.keys(colors.globalColors).reduce(
     (acc, item) => {
         acc[item] = item
         return acc
