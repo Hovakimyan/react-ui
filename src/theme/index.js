@@ -3,7 +3,7 @@
 import React from 'react'
 import * as sizes from './sizes'
 import type { Props, ThemeTypes } from './types'
-import { themeOptions } from 'constants/options'
+import { themeOptions } from 'consts/options'
 import {
     light,
     dark,
@@ -25,7 +25,10 @@ const getTheme = (theme: ThemeTypes) => {
     const colors = themes[theme]
     return {
         fonts: {
-            sizes: sizes.font
+            sizes: sizes.fontSizes
+        },
+        icons: {
+            sizes: sizes.iconSizes
         },
         colors: colors,
         inputs: {
