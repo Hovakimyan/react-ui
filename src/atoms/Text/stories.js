@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text } from './index'
 import Theme from 'theme'
-import { fontSizeOptions, colorOptions } from 'constants/options'
+import { fontSizeOptions, colorOptions } from 'consts/options'
 import { storiesOf } from '@storybook/react'
 import { jsxDecorator } from 'storybook-addon-jsx'
 import { select, boolean, text, withKnobs } from '@storybook/addon-knobs'

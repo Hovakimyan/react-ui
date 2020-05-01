@@ -4,7 +4,7 @@ import Theme from 'theme'
 import { storiesOf } from '@storybook/react'
 import { select, withKnobs } from '@storybook/addon-knobs'
 import { jsxDecorator } from 'storybook-addon-jsx'
-import { cornerOptions, shadowOptions } from 'constants/options'
+import { cornerOptions, shadowOptions } from 'consts/options'
 
 const stories = storiesOf('Atoms|Paper', module)
 

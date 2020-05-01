@@ -1,7 +1,7 @@
 // @flow
 
 import styled from 'styled-components'
-import { styles } from 'constants'
+import { styles } from 'consts'
 
 const getEllipsis = ({ ellipsis }) => (ellipsis ? styles.ellipsis : '')
 const getSelection = ({ noSelect }) => (noSelect ? styles.noSelect : '')
