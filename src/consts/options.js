@@ -1,4 +1,4 @@
-import { sizes } from 'constants/index'
+import { sizes } from 'consts/index'
 
 export const buttonTypeOptions = {
     primary: 'primary',
@@ -54,6 +54,16 @@ export const colorOptions = {
 }
 
 export const fontSizeOptions = Object.keys(sizes.fontSizes).reduce(
+    (acc, item) => {
+        acc[item] = item
+        return acc
+    },
+    {
+        None: ''
+    }
+)
+
+export const iconSizeOptions = Object.keys(sizes.iconSizes).reduce(
     (acc, item) => {
         acc[item] = item
         return acc
