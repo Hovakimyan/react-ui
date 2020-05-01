@@ -42,7 +42,7 @@
                 ["atoms", "./src/atoms"],
                 ["theme", "./src/theme"],
                 ["helpers", "./src/helpers"],
-                ["constants", "./src/constants"]
+                ["consts", "./src/consts"]
             ]
         }
     }

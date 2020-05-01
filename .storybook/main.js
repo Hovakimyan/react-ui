@@ -9,7 +9,7 @@ module.exports = {
                 atoms: path.resolve(__dirname, '../src/atoms'),
                 theme: path.resolve(__dirname, '../src/theme'),
                 helpers: path.resolve(__dirname, '../src/helpers'),
-                constants: path.resolve(__dirname, '../src/constants')
+                consts: path.resolve(__dirname, '../src/consts')
             }
         }
         return config
