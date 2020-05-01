@@ -4,7 +4,7 @@ import Theme from 'theme'
 import { storiesOf } from '@storybook/react'
 import { text, select, boolean, withKnobs } from '@storybook/addon-knobs'
 import { jsxDecorator } from 'storybook-addon-jsx'
-import { buttonTypeOptions, buttonSizeOptions } from 'constants/options'
+import { buttonTypeOptions, buttonSizeOptions } from 'consts/options'
 
 const stories = storiesOf('Atoms|Button', module)
 

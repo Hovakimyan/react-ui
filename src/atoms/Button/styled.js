@@ -2,7 +2,7 @@
 
 import styled, { css } from 'styled-components'
 
-import { noSelect, ellipsis } from 'constants/styles'
+import { noSelect, ellipsis } from 'consts/styles'
 
 const getDefaultStyles = ({ type, size, theme, isFlat, fit, weight }) => {
     const sizes = theme.buttons.sizes[size]

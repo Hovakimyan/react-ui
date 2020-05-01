@@ -1,7 +1,7 @@
 // @flow
 
 import styled, { css } from 'styled-components'
-import { noSelect, ellipsis } from 'constants/styles'
+import { noSelect, ellipsis } from 'consts/styles'
 
 const getDefaultStyles = ({ size, theme, isFlat, isFit, weight }) => {
     const sizes = theme.inputs.sizes[size]
