@@ -17,4 +17,4 @@ cp -rf ./src/flow-typed ./lib
 cp ./package.json ./lib
 cp ./README.md ./lib
 
-#npm publish ./lib
+npm publish ./lib
