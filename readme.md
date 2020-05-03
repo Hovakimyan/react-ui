@@ -1,4 +1,4 @@
-# react-ui
+# react-styles-ui
 
 ## UI Library of react components
 
