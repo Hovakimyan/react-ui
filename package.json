@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/Hovakimyan/react-ui/issues"
   },
-  "homepage": "https://github.com/Hovakimyan/react-ui#readme",
+  "homepage": "https://hovakimyan.github.io/react-ui/",
   "devDependencies": {
     "@babel/core": "^7.9.0",
     "@babel/cli": "^7.8.4",
