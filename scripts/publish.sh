@@ -12,7 +12,7 @@ git push
 
 ./node_modules/.bin/babel ./src --out-dir ./lib --ignore '**/stories.js','**/types.js','**/*.markdown.md'
 
-cp -rf ./src/flow-typed ./lib
+rm -rf ./lib/flow-typed
 
 cp ./package.json ./lib
 cp ./README.md ./lib
