@@ -1,2 +1,2 @@
 import Paper from './Paper'
-export { Paper }
+export { Paper, }

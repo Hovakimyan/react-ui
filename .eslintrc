@@ -2,16 +2,17 @@
     "extends": [
         "eslint:recommended",
         "plugin:json/recommended",
-        "plugin:prettier/recommended",
         "plugin:import/errors",
         "plugin:import/warnings",
         "plugin:flowtype/recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "prettier"
     ],
     "rules": {
         "react/display-name": 0,
         "react-hooks/rules-of-hooks": "error",
-        "complexity": ["error", { "max": 15 }]
+        "complexity": ["error", { "max": 15 }],
+        "comma-dangle": ["error", "always"]
     },
     "globals": {
         "GLOBALS": false,
@@ -28,7 +29,7 @@
         "sourceType": "module",
         "ecmaFeatures": {
             "jsx": true,
-            "es6": true,
+            "es6": true
         }
     },
     "env": {

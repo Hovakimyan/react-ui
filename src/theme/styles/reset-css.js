@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle, } from 'styled-components'
 
 const ResetCss = createGlobalStyle`
     html, body, #root {
@@ -75,13 +75,13 @@ const ResetCss = createGlobalStyle`
         }
     }
     ::-webkit-input-placeholder { /* Edge */
-      color: ${({ theme }) => theme.colors.secondaryLight};
+      color: ${({ theme, }) => theme.colors.secondaryLight};
     }
     :-ms-input-placeholder { /* Internet Explorer 10-11 */
-      color: ${({ theme }) => theme.colors.secondaryLight};
+      color: ${({ theme, }) => theme.colors.secondaryLight};
     }
     ::placeholder {
-      color: ${({ theme }) => theme.colors.secondaryLight};
+      color: ${({ theme, }) => theme.colors.secondaryLight};
     }
 `
 
