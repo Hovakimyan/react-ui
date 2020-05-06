@@ -1,10 +1,14 @@
-
-            import React from 'react'
+import React from 'react'
 import { Heading } from './index'
 import Theme from 'theme'
 import { storiesOf } from '@storybook/react'
-import { withKnobs } from '@storybook/addon-knobs'
+import { boolean, select, withKnobs } from '@storybook/addon-knobs'
 import { jsxDecorator } from 'storybook-addon-jsx'
+import {
+    headingOptions,
+    colorOptions,
+    fontSizeOptions
+} from '../../consts/options'
 
 const stories = storiesOf('Atoms|Heading', module)
 
@@ -13,8 +17,14 @@ stories.addDecorator(jsxDecorator)
 
 stories.add('Default', () => (
     <Theme>
-    <Heading>Hello Heading</Heading>
+        <Heading
+            tag={select('Heading', headingOptions, 'h1')}
+            ellipsis={boolean('Ellipsis', false)}
+            noSelect={boolean('Disable Select', false)}
+            color={select('Color', colorOptions, 'primaryDark')}
+            size={select('Size', fontSizeOptions, 'medium')}
+        >
+            Hello Heading
+        </Heading>
     </Theme>
 ))
-            
-            
