@@ -8,10 +8,10 @@ const Link = ({
     href,
     target = '_self',
     children,
-    className = ''
+    ...rest
 }: Props): React$Node => {
     return (
-        <Styled.Link className={className} href={href} target={target}>
+        <Styled.Link {...rest} href={href} target={target}>
             {children}
         </Styled.Link>
     )

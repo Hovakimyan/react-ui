@@ -1,9 +1,8 @@
 // @flow
 
-export type IconProps = {
+export type Props = {
     name: string,
     title?: string,
-    className?: string,
     color: GlobalColorType,
     size: IconSizeType,
     onClick?: Function,

@@ -5,9 +5,9 @@ import * as Styled from './styled'
 import type { Props } from './types'
 
 const Paper = (props: Props) => {
-    const { className = '', corner = 'rounded', shadow = 'shallow' } = props
+    const { corner = 'rounded', shadow = 'shallow', ...rest } = props
     return (
-        <Styled.Paper className={className} corner={corner} shadow={shadow}>
+        <Styled.Paper {...rest} corner={corner} shadow={shadow}>
             {props.children}
         </Styled.Paper>
     )

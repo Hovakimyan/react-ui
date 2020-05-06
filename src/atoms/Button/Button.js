@@ -10,7 +10,6 @@ const Button = ({
     onClick,
     children,
     refHandler = () => {},
-    className = '',
     disabled = false,
     isFlat = false,
     fit = false,
@@ -26,7 +25,6 @@ const Button = ({
         <Styled.Button
             {...rest}
             ref={refHandler}
-            className={className}
             size={size}
             fit={fit}
             onClick={clickHandler}
