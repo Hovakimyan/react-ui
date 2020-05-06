@@ -1,2 +1,1 @@
-import Text from './Text'
-export { Text }
+export { default as Text } from './Text'

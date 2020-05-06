@@ -1,5 +1,5 @@
 import React from 'react'
-import Icon from './index'
+import { Icon } from './index'
 import Theme from 'theme'
 import { iconDefaults } from './Icon'
 import { StyledContainer, StyledIconItem } from './styled-stories'

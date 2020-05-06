@@ -9,7 +9,6 @@ const Input = ({
     value,
     size = 'medium',
     refHandler = () => {},
-    className = '',
     disabled = false,
     isFlat = false,
     isFit = false,
@@ -21,7 +20,6 @@ const Input = ({
             onChange={onChange}
             value={value}
             ref={refHandler}
-            className={className}
             size={size}
             disabled={disabled}
             isFlat={isFlat}

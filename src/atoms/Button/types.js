@@ -5,7 +5,6 @@ export type Props = {
     onClick: Function,
     children: React$Node,
     refHandler?: Function,
-    className?: string,
     disabled?: boolean,
     isFlat?: boolean,
     fit?: boolean
