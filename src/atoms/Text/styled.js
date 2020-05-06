@@ -6,7 +6,7 @@ import { styles } from 'consts'
 const getEllipsis = ({ ellipsis }) => (ellipsis ? styles.ellipsis : '')
 const getSelection = ({ noSelect }) => (noSelect ? styles.noSelect : '')
 
-export const StyledText = styled.div`
+export const Text = styled.p`
     margin: 0;
     display: block;
     color: ${({ color, theme }) => theme.colors[color]};

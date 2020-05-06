@@ -1,7 +1,7 @@
 // @flow
 
 import React from 'react'
-import { StyledText } from './styled'
+import * as Styled from './styled'
 import type { Props } from './types'
 
 export const textDefaults = {
@@ -23,7 +23,7 @@ const Text = (props: Props): React$Element<HTMLDivElement> => {
     } = props
 
     return (
-        <StyledText
+        <Styled.Text
             {...rest}
             size={size}
             align={align}
@@ -32,7 +32,7 @@ const Text = (props: Props): React$Element<HTMLDivElement> => {
             noSelect={noSelect}
         >
             {props.children}
-        </StyledText>
+        </Styled.Text>
     )
 }
 
