@@ -12,7 +12,7 @@
         "react/display-name": 0,
         "react-hooks/rules-of-hooks": "error",
         "complexity": ["error", { "max": 15 }],
-        "comma-dangle": ["error", "always"]
+        "comma-dangle": ["error", "always-multiline"]
     },
     "globals": {
         "GLOBALS": false,

@@ -1,2 +1,2 @@
 import Heading from './Heading'
-export { Heading, }
+export { Heading }

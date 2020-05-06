@@ -2,7 +2,7 @@
 
 import React from 'react'
 import * as Styled from './styled'
-import type { Props, } from './types'
+import type { Props } from './types'
 
 export const textDefaults = {
     tag: 'h1',
@@ -10,7 +10,7 @@ export const textDefaults = {
     size: 'medium',
     align: 'center',
     color: 'secondaryExtraDark',
-    hoverColor: 'secondarySemiDark',
+    hoverColor: 'secondarySemiDark'
 }
 
 const Heading = ({
