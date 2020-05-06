@@ -1,2 +1,1 @@
-import Heading from './Heading'
-export { Heading }
+export { default as Heading } from './Heading'
