@@ -12,16 +12,15 @@ export const textDefaults = {
     hoverColor: 'secondarySemiDark'
 }
 
-const Text = (props: Props): React$Element<HTMLDivElement> => {
-    const {
-        weight = textDefaults.weight,
-        size = textDefaults.size,
-        color = textDefaults.color,
-        align = textDefaults.align,
-        noSelect = false,
-        ...rest
-    } = props
-
+const Text = ({
+    weight = textDefaults.weight,
+    size = textDefaults.size,
+    color = textDefaults.color,
+    align = textDefaults.align,
+    noSelect = false,
+    children,
+    ...rest
+}: Props): React$Element<HTMLDivElement> => {
     return (
         <Styled.Text
             {...rest}
@@ -31,7 +30,7 @@ const Text = (props: Props): React$Element<HTMLDivElement> => {
             weight={weight}
             noSelect={noSelect}
         >
-            {props.children}
+            {children}
         </Styled.Text>
     )
 }
