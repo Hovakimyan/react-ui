@@ -12,6 +12,6 @@ stories.addDecorator(jsxDecorator)
 
 stories.add('Default', () => (
     <Theme>
-        <Link>Hello Link</Link>
+        <Link href="#">Hello Link</Link>
     </Theme>
 ))
