@@ -58,7 +58,7 @@
     "husky": "3.1.0",
     "lint-staged": "9.2.5",
     "prettier": "1.16.4",
-    "storybook-addon-jsx": "7.1.15",
+    "storybook-addon-jsx": "7.2.3",
     "yargs": "15.3.1"
   },
   "dependencies": {
