@@ -2,6 +2,9 @@
 
 ## UI Library of react components
 
+Project deployed with storybook and you can see demo
+[here](https://hovakimyan.github.io/react-ui/)
+
 ## Installation
 
 `npm i`
