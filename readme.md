@@ -2,8 +2,8 @@
 
 ## UI Library of react components
 
-Project deployed with storybook and you can see demo
-[here](https://hovakimyan.github.io/react-ui/)
+Project deployed with storybook and you can see
+[DEMO HERE](https://hovakimyan.github.io/react-ui/)
 
 ## Installation
 
