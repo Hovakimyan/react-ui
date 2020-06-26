@@ -2,28 +2,28 @@ import { sizes } from 'consts/index'
 
 export const buttonTypeOptions = {
     primary: 'primary',
-    transparent: 'transparent'
+    transparent: 'transparent',
 }
 
 export const buttonSizeOptions = {
     Small: 'small',
     Medium: 'medium',
-    Large: 'large'
+    Large: 'large',
 }
 
 export const themeOptions = {
     Light: 'light',
-    Dark: 'dark'
+    Dark: 'dark',
 }
 
 export const cornerOptions = {
     Rounded: 'rounded',
-    Sharp: 'sharp'
+    Sharp: 'sharp',
 }
 
 export const shadowOptions = {
     Dense: 'dense',
-    Shallow: 'shallow'
+    Shallow: 'shallow',
 }
 
 export const headingOptions = {
@@ -32,7 +32,7 @@ export const headingOptions = {
     H3: 'h3',
     H4: 'h4',
     H5: 'h5',
-    H6: 'h6'
+    H6: 'h6',
 }
 
 export const colorOptions = {
@@ -59,7 +59,7 @@ export const colorOptions = {
     coral: 'coral',
     cyan: 'cyan',
     red: 'red',
-    None: ''
+    None: '',
 }
 
 export const fontSizeOptions = Object.keys(sizes.fontSizes).reduce(
@@ -68,8 +68,8 @@ export const fontSizeOptions = Object.keys(sizes.fontSizes).reduce(
         return acc
     },
     {
-        None: ''
-    }
+        None: '',
+    },
 )
 
 export const iconSizeOptions = Object.keys(sizes.iconSizes).reduce(
@@ -78,6 +78,6 @@ export const iconSizeOptions = Object.keys(sizes.iconSizes).reduce(
         return acc
     },
     {
-        None: ''
-    }
+        None: '',
+    },
 )

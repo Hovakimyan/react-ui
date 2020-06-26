@@ -21,12 +21,12 @@ stories.add('Default', () => {
                     boxSizing: 'border-box',
                     width: '100%',
                     display: 'flex',
-                    justifyContent: 'center'
+                    justifyContent: 'center',
                 }}
             >
                 <Input
                     // required
-                    onChange={e => setValue(e.target.value)}
+                    onChange={(e) => setValue(e.target.value)}
                     value={value}
                     placeholder="write text"
                     size={select('Size', buttonSizeOptions, 'medium')}

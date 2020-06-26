@@ -10,7 +10,7 @@ export const textDefaults = {
     size: 'medium',
     align: 'center',
     color: 'secondaryExtraDark',
-    hoverColor: 'secondarySemiDark'
+    hoverColor: 'secondarySemiDark',
 }
 
 const Heading = ({

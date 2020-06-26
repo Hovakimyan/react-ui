@@ -8,7 +8,7 @@ import icons from '@hovakimyan/icons'
 
 export const iconDefaults = {
     size: 'medium',
-    color: 'secondaryExtraDark'
+    color: 'secondaryExtraDark',
 }
 
 const Icon = (props: Props) => {

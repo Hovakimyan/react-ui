@@ -29,7 +29,7 @@ export const iconNameOptions = iconNames.reduce((acc, item) => {
 const sizeOptions = {
     ...iconSizeOptions,
     '40': 40,
-    '60': 60
+    '60': 60,
 }
 
 // Knobs for React props
@@ -46,7 +46,7 @@ stories.addWithJSX('Icon', () => (
 stories.add('Icons list', () => (
     <Theme>
         <StyledContainer>
-            {iconNames.map(item => {
+            {iconNames.map((item) => {
                 return (
                     <StyledIconItem key={item}>
                         {item}
