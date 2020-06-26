@@ -8,7 +8,7 @@
     "create": "node scripts/create.js",
     "deploy": "storybook-to-ghpages",
     "publish-module": "NODE_ENV=publish ./scripts/publish.sh",
-    "finalize": "npm run deploy && npm run publish-module"
+    "finalize": "git push && npm run deploy && npm run publish-module"
   },
   "husky": {
     "hooks": {
