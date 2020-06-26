@@ -19,7 +19,7 @@ stories.add('Default', () => (
                 boxSizing: 'border-box',
                 width: '100%',
                 display: 'flex',
-                justifyContent: 'center'
+                justifyContent: 'center',
             }}
         >
             <Paper

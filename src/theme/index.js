@@ -9,7 +9,7 @@ import {
     dark,
     getButtonStyles,
     getInputColors,
-    getCardShadow
+    getCardShadow,
 } from './colors'
 import { ThemeProvider } from 'styled-components'
 import ScrollBarStyles from './styles/scroll-bar'
@@ -18,31 +18,34 @@ import { boolean, select } from '@storybook/addon-knobs'
 
 const themes = {
     light,
-    dark
+    dark,
 }
 
 const getTheme = (theme: ThemeTypes) => {
     const colors = themes[theme]
     return {
         fonts: {
-            sizes: sizes.fontSizes
+            sizes: sizes.fontSizes,
         },
         icons: {
-            sizes: sizes.iconSizes
+            sizes: sizes.iconSizes,
+        },
+        loading: {
+            sizes: sizes.loading,
         },
         colors: colors,
         inputs: {
             sizes: sizes.inputs,
-            colors: getInputColors(colors)
+            colors: getInputColors(colors),
         },
         buttons: {
             sizes: sizes.button,
-            colors: getButtonStyles(colors)
+            colors: getButtonStyles(colors),
         },
         cards: {
             shadow: getCardShadow(colors),
-            corner: sizes.cardCorner
-        }
+            corner: sizes.cardCorner,
+        },
     }
 }
 

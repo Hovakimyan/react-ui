@@ -7,7 +7,7 @@ import { jsxDecorator } from 'storybook-addon-jsx'
 import {
     headingOptions,
     colorOptions,
-    fontSizeOptions
+    fontSizeOptions,
 } from '../../consts/options'
 
 const stories = storiesOf('Atoms|Heading', module)

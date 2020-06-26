@@ -5,7 +5,7 @@ export const fontSizes = {
     medium: '16px',
     large: '18px',
     xLarge: '22px',
-    xxLarge: '26px'
+    xxLarge: '26px',
 }
 
 export const iconSizes = {
@@ -15,5 +15,5 @@ export const iconSizes = {
     medium: '16px',
     large: '18px',
     xLarge: '22px',
-    xxLarge: '26px'
+    xxLarge: '26px',
 }
