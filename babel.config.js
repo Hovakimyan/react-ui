@@ -20,9 +20,9 @@ module.exports = {
                             ? './src/organism'
                             : './src/components/organism',
                     helpers: './src/helpers',
-                    consts: './src/consts'
-                }
-            }
-        ]
-    ]
+                    consts: './src/consts',
+                },
+            },
+        ],
+    ],
 }

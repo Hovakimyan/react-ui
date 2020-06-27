@@ -11,5 +11,5 @@ export type Props = {
     weight?: number,
     align?: string,
     ellipsis?: boolean,
-    noSelect?: boolean
+    noSelect?: boolean,
 }
