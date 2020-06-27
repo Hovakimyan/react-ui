@@ -12,10 +12,14 @@ if (
     argv.type !== 'organism'
 ) {
     console.log(
-        'Please use one of required types (atoms | molecules | organism)'
+        'Please use one of required types (atoms | molecules | organism)',
     )
     process.exit()
 }
+
+const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1)
+
+const componentType = capitalize(argv.type)
 
 if (!argv.name || typeof argv.name !== 'string') {
     console.log('Please write name for component (example: Button, Text...)')
@@ -24,7 +28,7 @@ if (!argv.name || typeof argv.name !== 'string') {
 
 const name = `${argv.name.charAt(0).toUpperCase()}${argv.name.slice(1)}`
 
-const getItemsList = name => {
+const getItemsList = (name) => {
     return [
         {
             name,
@@ -39,12 +43,12 @@ const ${name} = (props: Props) => {
 }
 
 export default ${name}
-`
+`,
         },
         {
             name: 'index',
             content: `import ${name} from './${name}'
-export { ${name} }`
+export { ${name} }`,
         },
         {
             name: 'types',
@@ -52,30 +56,42 @@ export { ${name} }`
 
 export type Props = {
     children: React$Node
-}\n`
+}\n`,
         },
         {
             name: 'stories',
             content: `
             import React from 'react'
 import { ${name} } from './index'
-import Theme from 'theme'
-import { storiesOf } from '@storybook/react'
-import { withKnobs } from '@storybook/addon-knobs'
-import { jsxDecorator } from 'storybook-addon-jsx'
 
-const stories = storiesOf('Atoms|${name}', module)
-
-stories.addDecorator(withKnobs)
-stories.addDecorator(jsxDecorator)
-
-stories.add('Default', () => (
-    <Theme>
-    <${name}>Hello ${name}</${name}>
-    </Theme>
-))
+export const Sample = () => <${name}>Hello ${name}</${name}>
             
-            `
+            `,
+        },
+        {
+            name: 'doc.stories.mdx',
+            content: `
+            import { Preview, Meta, Props, Story, Description } from "@storybook/addon-docs/blocks";
+import { ${name} } from './index'
+import { Sample } from './stories'
+
+<Meta title="${componentType}|${name}" component={${name}} />
+
+<Description of={${name}}/>
+
+## Simple ${name} Example
+
+<Preview>
+    <Story name='sample'>
+        <Sample />
+    </Story>
+</Preview>
+
+## Properties
+
+<Props of={${name}}/>
+
+            `,
         },
         {
             name: 'styled',
@@ -86,15 +102,15 @@ import styled from 'styled-components'
 export const ${name} = styled.div\`
     display: flex;
 \`
-`
-        }
+`,
+        },
     ]
 }
 
 function addRequiredFilesToFolder(dir, name) {
     const list = getItemsList(name)
 
-    list.forEach(item => {
+    list.forEach((item) => {
         fs.appendFileSync(`${dir}/${item.name}.js`, item.content)
     })
 

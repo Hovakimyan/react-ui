@@ -3,7 +3,7 @@ const createCompiler = require('@storybook/addon-docs/mdx-compiler-plugin')
 
 // Export a function. Accept the base config as the only param.
 module.exports = {
-    stories: ['../src/**/**/stories.(js)', '../src/**/**/*.stories.(mdx)'],
+    stories: ['../src/**/**/*.stories.(mdx)'],
     addons: [
         {
             name: '@storybook/addon-docs',
