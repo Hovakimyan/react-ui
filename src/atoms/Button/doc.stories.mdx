@@ -1,7 +1,6 @@
 import { Preview, Meta, Props, Story } from "@storybook/addon-docs/blocks";
 import { Button } from './index'
-import { text, select, boolean } from '@storybook/addon-knobs'
-import { buttonTypeOptions, buttonSizeOptions } from 'consts/options'
+import { Sample } from './stories'
 
 <Meta title="Atoms|Button" component={Button} />
 
@@ -10,18 +9,7 @@ import { buttonTypeOptions, buttonSizeOptions } from 'consts/options'
 
 <Preview>
     <Story name='sample'>
-        <Button
-            // required
-            type={select('Type', buttonTypeOptions, 'primary')}
-            size={select('Size', buttonSizeOptions, 'medium')}
-            onClick={console.log}
-            // optional
-            fit={boolean('Is Fit', false)}
-            isFlat={boolean('Is Flat', false)}
-            disabled={boolean('Disabled', false)}
-        >
-            {text('Label', 'Hello from Story')}
-        </Button>
+        <Sample />
     </Story>
 </Preview>
 

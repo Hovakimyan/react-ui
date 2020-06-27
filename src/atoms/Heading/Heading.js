@@ -15,17 +15,7 @@ export const textDefaults = {
 }
 
 /**
- *asdfasfasdfasdfasdfasdf
- * @param weight
- * @param size
- * @param color
- * @param align
- * @param noSelect
- * @param tag
- * @param children
- * @param rest
- * @returns {*}
- * @constructor
+ * Component for headers where you can choose which header tag you want to use
  */
 const Heading = ({
     weight = textDefaults.weight,

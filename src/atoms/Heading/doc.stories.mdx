@@ -1,24 +1,14 @@
-import { Preview, Meta, Props, Story } from "@storybook/addon-docs/blocks";
+import { Preview, Meta, Props, Story, Description, Source } from "@storybook/addon-docs/blocks";
 import { Heading } from './index'
-import { text, select, boolean } from '@storybook/addon-knobs'
-import { headingOptions, colorOptions, fontSizeOptions } from 'consts/options'
+import { Sample } from './stories'
 
 <Meta title="Atoms|Heading" component={Heading} />
 
-# Here will be button documentation
-# Here will be button documentation
+<Description of={Heading}/>
 
 <Preview>
-    <Story name='sample' source>
-        <Heading
-            tag={select('Heading', headingOptions, 'h1')}
-            ellipsis={boolean('Ellipsis', false)}
-            noSelect={boolean('Disable Select', false)}
-            color={select('Color', colorOptions, 'primaryDark')}
-            size={select('Size', fontSizeOptions, 'medium')}
-        >
-            Hello Heading
-        </Heading>
+    <Story name='sample'>
+        <Sample />
     </Story>
 </Preview>
 

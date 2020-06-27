@@ -11,16 +11,15 @@ export const iconDefaults = {
     color: 'secondaryExtraDark',
 }
 
-const Icon = (props: Props) => {
-    const {
-        name,
-        size = iconDefaults.size,
-        color = iconDefaults.color,
-        refHandler = () => {},
-        onClick,
-        title = '',
-        ...rest
-    } = props
+const Icon = ({
+    name,
+    size = iconDefaults.size,
+    color = iconDefaults.color,
+    refHandler = () => {},
+    onClick,
+    title = '',
+    ...rest
+}: Props) => {
     const iconSize = typeof size === 'number' ? `${size}px` : iconSizes[size]
     return (
         <Styled.Container
