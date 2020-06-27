@@ -1,13 +1,10 @@
-import { Preview, Meta, Story } from "@storybook/addon-docs/blocks";
+import { Preview, Meta, Props, Story } from "@storybook/addon-docs/blocks";
 import { Button } from './index'
 import { text, select, boolean } from '@storybook/addon-knobs'
 import { buttonTypeOptions, buttonSizeOptions } from 'consts/options'
 
 <Meta title="Atoms|Button" component={Button} />
 
-# Here will be button documentation
-# Here will be button documentation
-# Here will be button documentation
 # Here will be button documentation
 # Here will be button documentation
 
@@ -28,8 +25,6 @@ import { buttonTypeOptions, buttonSizeOptions } from 'consts/options'
     </Story>
 </Preview>
 
-# Here will be button documentation
-# Here will be button documentation
-# Here will be button documentation
-# Here will be button documentation
-# Here will be button documentation
+## Properties
+
+<Props of={Button} />

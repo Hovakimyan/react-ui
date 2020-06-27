@@ -33,12 +33,11 @@
     "@babel/preset-react": "^7.10.1",
     "@storybook/addon-a11y": "5.3.19",
     "@storybook/addon-actions": "5.3.19",
+    "@storybook/addon-docs": "5.3.19",
     "@storybook/addon-knobs": "5.3.19",
     "@storybook/addon-notes": "5.3.19",
     "@storybook/addon-viewport": "5.3.19",
-    "storybook-addon-jsx": "7.3.0",
     "@storybook/react": "5.3.19",
-    "@storybook/addon-docs": "5.3.19",
     "@storybook/storybook-deployer": "2.8.6",
     "babel-core": "^6.26.3",
     "babel-eslint": "^10.1.0",
@@ -60,6 +59,7 @@
     "husky": "3.1.0",
     "lint-staged": "10.2.11",
     "prettier": "2.0.5",
+    "storybook-addon-jsx": "7.3.0",
     "yargs": "15.3.1"
   },
   "dependencies": {

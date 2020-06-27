@@ -1,4 +1,5 @@
 // @flow
+// import { Preview, Meta, Props, Story, Source } from "@storybook/addon-docs/blocks";
 
 import React from 'react'
 import * as Styled from './styled'
@@ -13,6 +14,19 @@ export const textDefaults = {
     hoverColor: 'secondarySemiDark',
 }
 
+/**
+ *asdfasfasdfasdfasdfasdf
+ * @param weight
+ * @param size
+ * @param color
+ * @param align
+ * @param noSelect
+ * @param tag
+ * @param children
+ * @param rest
+ * @returns {*}
+ * @constructor
+ */
 const Heading = ({
     weight = textDefaults.weight,
     size = textDefaults.size,

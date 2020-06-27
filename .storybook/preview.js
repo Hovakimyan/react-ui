@@ -1,8 +1,7 @@
 import React from 'react'
-import { DocsPage, DocsContainer } from '@storybook/addon-docs/blocks'
 import { addParameters, addDecorator } from '@storybook/react'
 import { withKnobs } from '@storybook/addon-knobs'
-import { jsxDecorator } from 'storybook-addon-jsx'
+global.STORYBOOK_REACT_CLASSES = {}
 
 import Theme from 'theme'
 
@@ -13,7 +12,6 @@ addParameters({
 })
 
 addDecorator(withKnobs)
-addDecorator(jsxDecorator)
 
 addDecorator((story) => (
     <Theme>

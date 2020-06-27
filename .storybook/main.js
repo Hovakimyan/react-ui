@@ -16,9 +16,8 @@ module.exports = {
         '@storybook/addon-knobs',
         '@storybook/addon-viewport',
         '@storybook/addon-notes',
-        'storybook-addon-jsx',
     ],
-    webpackFinal: async (config, { configType }) => {
+    webpackFinal: async (config) => {
         config.resolve = {
             alias: {
                 atoms: path.resolve(__dirname, '../src/atoms'),
