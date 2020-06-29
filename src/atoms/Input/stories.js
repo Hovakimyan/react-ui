@@ -13,7 +13,7 @@ export const Sample = () => {
             placeholder="write text"
             size={select('Size', buttonSizeOptions, 'medium')}
             // optional
-            isFit={boolean('Is Fit', false)}
+            isFit={boolean('Is isFit', false)}
             isFlat={boolean('Is Flat', false)}
             disabled={boolean('Disabled', false)}
         />

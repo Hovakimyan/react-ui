@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components'
 
 import { noSelect, ellipsis } from 'consts/styles'
 
-const getDefaultStyles = ({ type, size, theme, isFlat, fit, weight }) => {
+const getDefaultStyles = ({ type, size, theme, isFlat, isFit, weight }) => {
     const sizes = theme.buttons.sizes[size]
     const colors = theme.buttons.colors[type]
     return css`
@@ -17,7 +17,8 @@ const getDefaultStyles = ({ type, size, theme, isFlat, fit, weight }) => {
         box-shadow: ${isFlat ? 'none' : colors.shadow};
         display: flex;
         font-weight: ${weight};
-        flex-grow: ${fit ? 1 : 0};
+        flex-grow: ${isFit ? 1 : 0};
+        width: ${isFit ? '100%' : 'auto'};
     `
 }
 

@@ -2,15 +2,13 @@ import React from 'react'
 import { Button } from './index'
 import { text, select, boolean } from '@storybook/addon-knobs'
 import { buttonTypeOptions, buttonSizeOptions } from 'consts/options'
-
+console.dir(Button)
 export const Sample = () => (
     <Button
-        // required
+        onClick={console.log}
         type={select('Type', buttonTypeOptions, 'primary')}
         size={select('Size', buttonSizeOptions, 'medium')}
-        onClick={console.log}
-        // optional
-        fit={boolean('Is Fit', false)}
+        isFit={boolean('Is Fit', false)}
         isFlat={boolean('Is Flat', false)}
         disabled={boolean('Disabled', false)}
     >
