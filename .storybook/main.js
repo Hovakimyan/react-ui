@@ -16,6 +16,7 @@ module.exports = {
         '@storybook/addon-knobs',
         '@storybook/addon-viewport',
         '@storybook/addon-notes',
+        'storybook-addon-react-docgen',
     ],
     webpackFinal: async (config) => {
         config.resolve = {

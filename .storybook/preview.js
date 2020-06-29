@@ -1,15 +1,9 @@
 import React from 'react'
-import { addParameters, addDecorator } from '@storybook/react'
+import { addDecorator } from '@storybook/react'
 import { withKnobs } from '@storybook/addon-knobs'
 global.STORYBOOK_REACT_CLASSES = {}
 
 import Theme from 'theme'
-
-addParameters({
-    docs: {
-        inlineStories: false,
-    },
-})
 
 addDecorator(withKnobs)
 

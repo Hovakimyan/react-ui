@@ -36,7 +36,10 @@ const getItemsList = (name) => {
 
 import React from 'react'
 import * as Styled from './styled'
-import type { Props } from './types'
+
+type Props = {
+    children: React$Node
+}
 
 const ${name} = (props: Props) => {
     return <Styled.${name}>{props.children}</Styled.${name}>
@@ -49,14 +52,6 @@ export default ${name}
             name: 'index',
             content: `import ${name} from './${name}'
 export { ${name} }`,
-        },
-        {
-            name: 'types',
-            content: `// @flow
-
-export type Props = {
-    children: React$Node
-}\n`,
         },
         {
             name: 'stories',

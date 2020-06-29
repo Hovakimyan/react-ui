@@ -1,8 +1,9 @@
 const { NODE_ENV } = process.env
 
 module.exports = {
-    presets: ['@babel/preset-env', '@babel/preset-react', '@babel/preset-flow'],
+    presets: ['@babel/preset-env', '@babel/preset-flow', '@babel/preset-react'],
     plugins: [
+        'react-docgen',
         [
             'module-resolver',
             {

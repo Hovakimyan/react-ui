@@ -1,11 +1,15 @@
-import { Preview, Meta, Props, Story } from "@storybook/addon-docs/blocks";
-import { Button } from './index'
+import { Preview, Meta, Props, Story, Description } from "@storybook/addon-docs/blocks";
+import Button from './Button'
 import { Sample } from './stories'
+import Theme from 'theme'
 
 <Meta title="Atoms|Button" component={Button} />
 
-# Here will be button documentation
-# Here will be button documentation
+# Button
+
+<br />
+
+## Buttons allow users to take actions, and make choices, with a single tap.
 
 <Preview>
     <Story name='sample'>
@@ -13,6 +17,20 @@ import { Sample } from './stories'
     </Story>
 </Preview>
 
-## Properties
+<Preview>
+    <Theme>
+        <Button isFlat>
+            Flat Button
+        </Button>
+        <br />
+        <Button isFit>
+            Fit Button
+        </Button>
+        <br />
+        <Button isFlat isFit>
+            Flat & Fit Button
+        </Button>
+    </Theme>
+</Preview>
 
 <Props of={Button} />
