@@ -1,13 +1,13 @@
-import React from 'react'
+import React, {ReactElement} from 'react'
 import { Button } from './index'
 import { text, select, boolean } from '@storybook/addon-knobs'
-import { buttonTypeOptions, buttonSizeOptions } from 'consts/options'
-console.dir(Button)
-export const Sample = () => (
+import { options } from 'consts'
+
+export const Sample = (): ReactElement => (
     <Button
         onClick={console.log}
-        type={select('Type', buttonTypeOptions, 'primary')}
-        size={select('Size', buttonSizeOptions, 'medium')}
+        type={select('Type', options.buttonTypeOptions, 'primary')}
+        size={select('Size', options.buttonSizeOptions, 'medium')}
         isFit={boolean('Is Fit', false)}
         isFlat={boolean('Is Flat', false)}
         disabled={boolean('Disabled', false)}
