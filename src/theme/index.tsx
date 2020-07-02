@@ -3,7 +3,7 @@
 import React from 'react'
 import * as sizes from './sizes'
 import type { Props, ThemeTypes } from './types'
-import { themeOptions } from 'consts/options'
+import { options } from 'consts'
 import {
     light,
     dark,
@@ -53,7 +53,7 @@ const Theme = ({ children }: Props) => {
     return (
         <ThemeProvider
             isFlat={boolean('Is Flat Design', false)}
-            theme={getTheme(select('Theme', themeOptions, 'light'))}
+            theme={getTheme(select('Theme', options.themeOptions, 'light'))}
         >
             <ScrollBarStyles />
             <ResetCss />

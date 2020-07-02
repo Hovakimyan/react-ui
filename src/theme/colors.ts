@@ -1,4 +1,5 @@
-import { hexToRgbA } from 'helpers/color'
+import { hexToRgbA } from 'helpers'
+import { ColorTypes } from './types'
 
 const regularColors = {
     white: '#FFFFFF',
@@ -11,7 +12,7 @@ const regularColors = {
     red: '#FF4C4C',
 }
 
-export const light = {
+export const light: ColorTypes = {
     ...regularColors,
     // primary
     primaryExtraDark: '#0052E0',
@@ -32,7 +33,7 @@ export const light = {
     secondaryUltraLight: '#EDEFF6',
 }
 
-export const dark = {
+export const dark: ColorTypes = {
     ...regularColors,
     // primary
     primaryExtraDark: '#0052E0',
@@ -53,7 +54,7 @@ export const dark = {
     secondaryUltraLight: '#EDEFF6',
 }
 
-export const getButtonStyles = (colors) => ({
+export const getButtonStyles = (colors: ColorTypes) => ({
     disabled: {
         color: colors.secondarySemiLight,
         shadow: 'none',
@@ -77,12 +78,12 @@ export const getButtonStyles = (colors) => ({
     },
 })
 
-export const getCardShadow = (colors) => ({
+export const getCardShadow = (colors: ColorTypes) => ({
     shallow: `0px 6px 12px 0px ${hexToRgbA(colors.primaryExtraDark, 10)};`,
     dense: `0px 3px 6px 0px ${hexToRgbA(colors.primaryExtraDark, 20)};`,
 })
 
-export const getInputColors = (colors) => ({
+export const getInputColors = (colors: ColorTypes) => ({
     border: {
         active: colors.secondary,
         disabled: colors.secondaryExtraLight,
