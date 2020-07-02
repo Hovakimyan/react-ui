@@ -1,13 +1,13 @@
 import React, {ReactElement} from 'react'
 import { Button } from './index'
 import { text, select, boolean } from '@storybook/addon-knobs'
-import { options } from 'consts'
+import { buttonTypeOptions, buttonSizeOptions } from 'consts/options'
 
 export const Sample = (): ReactElement => (
     <Button
         onClick={console.log}
-        type={select('Type', options.buttonTypeOptions, 'primary')}
-        size={select('Size', options.buttonSizeOptions, 'medium')}
+        type={select('Type', buttonTypeOptions, 'primary')}
+        size={select('Size', buttonSizeOptions, 'medium')}
         isFit={boolean('Is Fit', false)}
         isFlat={boolean('Is Flat', false)}
         disabled={boolean('Disabled', false)}

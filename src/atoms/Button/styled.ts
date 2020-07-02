@@ -4,9 +4,9 @@ import styled, { css } from 'styled-components'
 
 import { noSelect, ellipsis } from 'consts/styles'
 
-const getDefaultStyles = ({ type, size, theme, isFlat, isFit, weight }) => {
+const getDefaultStyles = ({ buttonType, size, theme, isFlat, isFit, weight }: any) => {
     const sizes = theme.buttons.sizes[size]
-    const colors = theme.buttons.colors[type]
+    const colors = theme.buttons.colors[buttonType]
     return css`
         padding: ${sizes.padding};
         height: ${sizes.height};
@@ -22,7 +22,7 @@ const getDefaultStyles = ({ type, size, theme, isFlat, isFit, weight }) => {
     `
 }
 
-const getDisabledStyles = ({ disabled }) => {
+const getDisabledStyles = ({ disabled }: any) => {
     if (!disabled) return ''
     return css`
         opacity: 0.5;
@@ -33,21 +33,21 @@ const getDisabledStyles = ({ disabled }) => {
     `
 }
 
-const getHoverStyles = ({ type, disabled, theme }) => {
+const getHoverStyles = ({ buttonType, disabled, theme }: any) => {
     if (disabled) return ''
     return css`
         &:hover {
-            background: ${theme.buttons.colors[type].hover};
+            background: ${theme.buttons.colors[buttonType].hover};
         }
     `
 }
 
-const getActiveStyles = ({ type, disabled, theme }) => {
+const getActiveStyles = ({ buttonType, disabled, theme }: any) => {
     if (disabled) return ''
     return css`
         &:active {
             box-shadow: none;
-            background: ${theme.buttons.colors[type].active};
+            background: ${theme.buttons.colors[buttonType].active};
         }
     `
 }

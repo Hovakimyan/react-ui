@@ -25,20 +25,6 @@
     "url": "https://github.com/Hovakimyan/react-ui/issues"
   },
   "homepage": "https://hovakimyan.github.io/react-ui/",
-  "_moduleAliases": {
-    "atoms": [
-      "./src/atoms"
-    ],
-    "theme": [
-      "./src/theme"
-    ],
-    "helpers": [
-      "./src/helpers"
-    ],
-    "consts": [
-      "./src/consts"
-    ]
-  },
   "devDependencies": {
     "@babel/cli": "^7.10.4",
     "@babel/core": "^7.10.4",

@@ -24,7 +24,7 @@ const Button = ({
     isFit = false,
     ...rest
 }: Props) => {
-    const clickHandler = (event: Event): void => {
+    const clickHandler = (event: React.MouseEvent): void => {
         if (!disabled) {
             onClick(event)
         }
@@ -37,7 +37,7 @@ const Button = ({
             isFit={isFit}
             onClick={clickHandler}
             disabled={disabled}
-            type={type}
+            buttonType={type}
             isFlat={isFlat}
         >
             {children}
