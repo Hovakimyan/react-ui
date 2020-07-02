@@ -7,8 +7,8 @@ Project deployed with storybook and you can see
 
 ## Installation
 
-`npm i`
-`npm start`
+`yarn`
+`yarn start`
 
 ## Structure
 
@@ -24,7 +24,7 @@ For Typing we use `flow`
 
 For creating component we can use command below
 
-`npm run create  -- --type=atoms --name=Button`
+`yarn run create  -- --type=atoms --name=Button`
 
 as `type` we need to use `atom | molecule | organism`
 
@@ -40,4 +40,4 @@ for deployment we use `storybook-deployer` which will publish project to github 
 
 To deploy project you need to run
 
-`npm run deploy`
+`yarn run deploy`

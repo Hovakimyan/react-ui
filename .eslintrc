@@ -1,11 +1,11 @@
 {
     "extends": [
         "eslint:recommended",
-        "plugin:json/recommended",
         "plugin:import/errors",
         "plugin:import/warnings",
-        "plugin:flowtype/recommended",
         "plugin:react/recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:@typescript-eslint/recommended",
         "prettier"
     ],
     "rules": {
@@ -23,8 +23,8 @@
         "render": false,
         "shallow": false
     },
-    "plugins": ["react", "flowtype", "prettier", "react-hooks"],
-    "parser": "babel-eslint",
+    "plugins": ["react", "react-hooks", "@typescript-eslint","prettier"],
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "sourceType": "module",
         "ecmaFeatures": {
@@ -38,13 +38,16 @@
         "browser": true
     },
     "settings": {
+        "import/parsers": {
+            "@typescript-eslint/parser": [".ts", ".tsx"]
+        },
         "import/resolver": {
-            "alias": [
-                ["atoms", "./src/atoms"],
-                ["theme", "./src/theme"],
-                ["helpers", "./src/helpers"],
-                ["consts", "./src/consts"]
-            ]
+            "typescript": {
+                "helpers": "./src/helpers",
+                "theme": "./src/theme",
+                "consts": "./src/consts",
+                "atoms": "./src/atoms"
+            }
         }
     }
 }
