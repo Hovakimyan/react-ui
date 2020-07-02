@@ -11,7 +11,9 @@ export const buttonSizeOptions = {
     Large: 'large',
 }
 
-export const themeOptions = {
+export const themeOptions: {
+    [key: string]: ThemeTypes
+} = {
     Light: 'light',
     Dark: 'dark',
 }

@@ -1,6 +1,10 @@
 type ThemeColorTypes = 'primary' | 'transparent'
 
+type ThemeTypes = 'light' | 'dark'
+
 type SizeTypes = 'small' | 'medium' | 'large'
+
+type ButtonTypes = 'disabled' | 'primary' | 'transparent'
 
 type FontSizeType =
     | 'xxSmall'

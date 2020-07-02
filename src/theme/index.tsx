@@ -1,8 +1,7 @@
-// @flow
-
 import React from 'react'
 import * as sizes from './sizes'
-import type { Props, ThemeTypes } from './types'
+import { ThemeProvider } from 'styled-components'
+import type {ColorTypes, Props} from './types'
 import { options } from 'consts'
 import {
     light,
@@ -11,17 +10,18 @@ import {
     getInputColors,
     getCardShadow,
 } from './colors'
-import { ThemeProvider } from 'styled-components'
 import ScrollBarStyles from './styles/scroll-bar'
 import ResetCss from './styles/reset-css'
-import { boolean, select } from '@storybook/addon-knobs'
+import { select } from '@storybook/addon-knobs'
 
-const themes = {
+const themes: {
+    [key: string]: ColorTypes
+} = {
     light,
     dark,
 }
 
-const getTheme = (theme: ThemeTypes) => {
+const getTheme = (theme: ThemeTypes): any => {
     const colors = themes[theme]
     return {
         fonts: {
@@ -52,7 +52,6 @@ const getTheme = (theme: ThemeTypes) => {
 const Theme = ({ children }: Props) => {
     return (
         <ThemeProvider
-            isFlat={boolean('Is Flat Design', false)}
             theme={getTheme(select('Theme', options.themeOptions, 'light'))}
         >
             <ScrollBarStyles />

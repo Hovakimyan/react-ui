@@ -29,5 +29,3 @@ export type ColorTypes = {
     cyan: string
     red: string
 }
-
-export type ThemeTypes = 'light' | 'dark'
