@@ -1,11 +1,15 @@
 import * as sizes from './sizes'
 
-export const buttonTypeOptions = {
+export const buttonTypeOptions: {
+    [key: string]: ThemeColorTypes
+} = {
     primary: 'primary',
     transparent: 'transparent',
 }
 
-export const buttonSizeOptions = {
+export const buttonSizeOptions: {
+    [key: string]: SizeTypes
+} = {
     Small: 'small',
     Medium: 'medium',
     Large: 'large',
@@ -65,7 +69,7 @@ export const colorOptions = {
 }
 
 export const fontSizeOptions = Object.keys(sizes.fontSizes).reduce(
-    (acc: {[key: string]: string}, item: string) => {
+    (acc: { [key: string]: string }, item: string) => {
         acc[item] = item
         return acc
     },
@@ -75,7 +79,7 @@ export const fontSizeOptions = Object.keys(sizes.fontSizes).reduce(
 )
 
 export const iconSizeOptions = Object.keys(sizes.iconSizes).reduce(
-    (acc: {[key: string]: string}, item: string) => {
+    (acc: { [key: string]: string }, item: string) => {
         acc[item] = item
         return acc
     },

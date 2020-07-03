@@ -1,12 +1,23 @@
 {
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "es6": true
+        }
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
     "extends": [
-        "eslint:recommended",
-        "plugin:import/errors",
-        "plugin:import/warnings",
         "plugin:react/recommended",
-        "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
-        "prettier"
+        "prettier/@typescript-eslint",
+        "plugin:prettier/recommended"
     ],
     "rules": {
         "react/display-name": 0,
@@ -14,40 +25,5 @@
         "complexity": ["error", { "max": 15 }],
         "comma-dangle": ["error", "always-multiline"]
     },
-    "globals": {
-        "GLOBALS": false,
-        "configure": false,
-        "localDevBackend": false,
-        "mount": false,
-        "React": false,
-        "render": false,
-        "shallow": false
-    },
-    "plugins": ["@typescript-eslint","react", "react-hooks", "prettier"],
-    "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "sourceType": "module",
-        "ecmaFeatures": {
-            "jsx": true,
-            "es6": true
-        }
-    },
-    "env": {
-        "es6": true,
-        "node": true,
-        "browser": true
-    },
-    "settings": {
-        "import/parsers": {
-            "@typescript-eslint/parser": [".ts", ".tsx"]
-        },
-        "import/resolver": {
-            "typescript": {
-                "helpers": "./src/helpers",
-                "theme": "./src/theme",
-                "consts": "./src/consts",
-                "atoms": "./src/atoms"
-            }
-        }
-    }
+    "plugins": ["@typescript-eslint","react", "react-hooks", "prettier"]
 }

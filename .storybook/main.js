@@ -30,10 +30,10 @@ module.exports = {
             use: [
                 {
                     loader: require.resolve('babel-loader'),
-                }
+                },
             ],
-        });
-        config.resolve.extensions.push('.ts', '.tsx', '.js', '.json');
+        })
+        config.resolve.extensions.push('.ts', '.tsx', '.js', '.json')
         return config
     },
 }
