@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react'
 import { Button } from './index'
 import { text, select, boolean } from '@storybook/addon-knobs'
 import { buttonTypeOptions, buttonSizeOptions } from 'consts/options'
-
+console.dir(Button)
 export const Sample = (): ReactElement => (
     <Button
         onClick={console.log}

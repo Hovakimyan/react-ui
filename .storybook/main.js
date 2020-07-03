@@ -26,14 +26,17 @@ module.exports = {
             consts: path.resolve(__dirname, '../src/consts'),
         }
         config.module.rules.push({
-            test: /\.(ts|tsx|js)$/,
+            test: /\.(ts|tsx)$/,
             use: [
                 {
                     loader: require.resolve('babel-loader'),
                 },
+                {
+                    loader: require.resolve('react-docgen-typescript-loader'),
+                },
             ],
         })
-        config.resolve.extensions.push('.ts', '.tsx', '.js', '.json')
+        config.resolve.extensions.push('.ts', '.tsx')
         return config
     },
 }

@@ -1,4 +1,4 @@
-import { hexToRgbA } from 'helpers'
+import { hexToRgbA } from 'helpers/color'
 import { ColorTypes } from './types'
 
 const regularColors = {
