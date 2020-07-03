@@ -13,10 +13,11 @@ Project deployed with storybook and you can see
 ## Structure
 
 Project created with Atomic structure
-- Atoms
-- Molecules
-- Organism
-- helpers // helper methods
+
+-   Atoms
+-   Molecules
+-   Organism
+-   helpers // helper methods
 
 For Typing we use `flow`
 
@@ -24,7 +25,7 @@ For Typing we use `flow`
 
 For creating component we can use command below
 
-`yarn run create  -- --type=atoms --name=Button`
+`yarn run create -- --type=atoms --name=Button`
 
 as `type` we need to use `atom | molecule | organism`
 

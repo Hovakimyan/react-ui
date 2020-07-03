@@ -25,5 +25,5 @@
         "complexity": ["error", { "max": 15 }],
         "comma-dangle": ["error", "always-multiline"]
     },
-    "plugins": ["@typescript-eslint","react", "react-hooks", "prettier"]
+    "plugins": ["@typescript-eslint", "react", "react-hooks", "prettier"]
 }
