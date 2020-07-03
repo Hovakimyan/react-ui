@@ -1,20 +1,17 @@
-// @flow
-
-import React, {ReactNode} from 'react'
+import React, { ReactElement, PropsWithChildren, FC } from 'react'
 import * as Styled from './styled'
-import { emptyFunction } from 'helpers'
+import { emptyFunction } from 'helpers/methods'
 
-type Props = {
-    type: ThemeColorTypes,
-    size: SizeTypes,
+type Props = PropsWithChildren<{
+    type: ThemeColorTypes
+    size: SizeTypes
     onClick: (event: React.MouseEvent) => void
-    children: ReactNode,
-    disabled?: boolean,
-    isFlat?: boolean,
-    isFit?: boolean,
-}
+    disabled?: boolean
+    isFlat?: boolean
+    isFit?: boolean
+}>
 
-const Button = ({
+const Button: FC<Props> = ({
     type = 'primary',
     size = 'medium',
     onClick = emptyFunction,
@@ -23,7 +20,7 @@ const Button = ({
     isFlat = false,
     isFit = false,
     ...rest
-}: Props) => {
+}: Props): ReactElement => {
     const clickHandler = (event: React.MouseEvent): void => {
         if (!disabled) {
             onClick(event)

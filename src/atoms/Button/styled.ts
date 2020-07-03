@@ -5,14 +5,20 @@ import styled, { css, StyledProps } from 'styled-components'
 import { noSelect, ellipsis } from 'consts/styles'
 
 type Props = StyledProps<{
-    buttonType: ThemeColorTypes,
-    size: SizeTypes,
-    disabled?: boolean,
-    isFlat?: boolean,
-    isFit?: boolean,
+    buttonType: ThemeColorTypes
+    size: SizeTypes
+    disabled?: boolean
+    isFlat?: boolean
+    isFit?: boolean
 }>
 
-const getDefaultStyles = ({ theme, buttonType, size, isFlat, isFit }: Props) => {
+const getDefaultStyles = ({
+    theme,
+    buttonType,
+    size,
+    isFlat,
+    isFit,
+}: Props) => {
     const sizes = theme.buttons.sizes[size]
     const colors = theme.buttons.colors[buttonType]
     return css`
