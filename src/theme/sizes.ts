@@ -54,7 +54,9 @@ export const loading = {
     large: 100,
 }
 
-export const cardCorner = {
+export const cardCorner: {
+    [key in ICardsCorners]: string | number
+} = {
     rounded: '10px',
     sharp: 0,
 }

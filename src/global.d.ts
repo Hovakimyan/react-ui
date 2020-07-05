@@ -8,6 +8,10 @@ type ButtonTypes = 'disabled' | 'primary' | 'transparent'
 
 type HeadingTypes = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
 
+type ICardsShadows = 'shallow' | 'dense'
+
+type ICardsCorners = 'rounded' | 'sharp'
+
 type FontSizeType =
     | 'xxSmall'
     | 'xSmall'

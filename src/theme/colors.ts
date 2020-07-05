@@ -78,7 +78,11 @@ export const getButtonStyles = (colors: ColorTypes) => ({
     },
 })
 
-export const getCardShadow = (colors: ColorTypes) => ({
+export const getCardShadow = (
+    colors: ColorTypes,
+): {
+    [key in ICardsShadows]: string
+} => ({
     shallow: `0px 6px 12px 0px ${hexToRgbA(colors.primaryExtraDark, 10)};`,
     dense: `0px 3px 6px 0px ${hexToRgbA(colors.primaryExtraDark, 20)};`,
 })

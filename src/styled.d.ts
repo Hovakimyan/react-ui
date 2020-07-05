@@ -1,6 +1,5 @@
 // import original module declarations
 import 'styled-components'
-import { ThemedStyledProps } from 'styled-components'
 
 type IColorTypes = {
     [key in GlobalColorType]: string
@@ -52,12 +51,6 @@ type IButtonColors = {
         active: string
     }
 }
-type IICardsShadows = {
-    [key in ButtonTypes]: {
-        shallow: GlobalColorType
-        dense: string
-    }
-}
 
 export type Theme = {
     fonts: {
@@ -79,7 +72,7 @@ export type Theme = {
         colors: IButtonColors
     }
     cards: {
-        shadow: IICardsShadows
+        shadow: ICardsShadows
         corner: ICardCorners
     }
 }
@@ -105,8 +98,12 @@ declare module 'styled-components' {
             colors: IButtonColors
         }
         cards: {
-            shadow: IICardsShadows
-            corner: ICardCorners
+            shadow: {
+                [key in ICardsShadows]: string
+            }
+            corner: {
+                [key in ICardsCorners]: string | number
+            }
         }
     }
 }

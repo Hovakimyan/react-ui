@@ -5,8 +5,8 @@ import { cornerOptions, shadowOptions } from 'consts/options'
 
 export const Sample = () => (
     <Paper
-        corner={select('Corner', cornerOptions, 'rounded')}
-        shadow={select('Shadow', shadowOptions, 'dense')}
+        corner={select<ICardsCorners>('Corner', cornerOptions, 'rounded')}
+        shadow={select<ICardsShadows>('Shadow', shadowOptions, 'dense')}
     >
         Hello Paper
     </Paper>
