@@ -1,15 +1,15 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import { Heading } from './index'
 import { text, select, boolean } from '@storybook/addon-knobs'
 import { headingOptions, colorOptions, fontSizeOptions } from 'consts/options'
 
-export const Sample = () => (
+export const Sample = (): ReactElement => (
     <Heading
-        tag={select('Heading', headingOptions, 'h1')}
+        tag={select<HeadingTypes>('Heading', headingOptions, 'h1')}
         ellipsis={boolean('Ellipsis', false)}
         noSelect={boolean('Disable Select', false)}
-        color={select('Color', colorOptions, 'primaryDark')}
-        size={select('Size', fontSizeOptions, 'medium')}
+        color={select<GlobalColorType>('Color', colorOptions, 'primaryDark')}
+        size={select<FontSizeType>('Size', fontSizeOptions, 'medium')}
     >
         {text('Text', 'Hello from Story')}
     </Heading>

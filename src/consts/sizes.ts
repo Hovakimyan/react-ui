@@ -1,4 +1,6 @@
-export const fontSizes = {
+export const fontSizes: {
+    [key in FontSizeType]: string
+} = {
     xxSmall: '10px',
     xSmall: '12px',
     small: '14px',
@@ -8,7 +10,9 @@ export const fontSizes = {
     xxLarge: '26px',
 }
 
-export const iconSizes = {
+export const iconSizes: {
+    [key in FontSizeType]: string
+} = {
     xxSmall: '10px',
     xSmall: '12px',
     small: '14px',

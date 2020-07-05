@@ -22,17 +22,17 @@ export const themeOptions: {
     Dark: 'dark',
 }
 
-export const cornerOptions = {
+export const cornerOptions: any = {
     Rounded: 'rounded',
     Sharp: 'sharp',
 }
 
-export const shadowOptions = {
+export const shadowOptions: any = {
     Dense: 'dense',
     Shallow: 'shallow',
 }
 
-export const headingOptions = {
+export const headingOptions: any = {
     H1: 'h1',
     H2: 'h2',
     H3: 'h3',
@@ -41,7 +41,7 @@ export const headingOptions = {
     H6: 'h6',
 }
 
-export const colorOptions = {
+export const colorOptions: any = {
     primaryExtraDark: 'primaryExtraDark',
     primaryDark: 'primaryDark',
     primarySemiDark: 'primarySemiDark',
@@ -68,7 +68,7 @@ export const colorOptions = {
     None: '',
 }
 
-export const fontSizeOptions = Object.keys(sizes.fontSizes).reduce(
+export const fontSizeOptions: any = Object.keys(sizes.fontSizes).reduce(
     (acc: { [key: string]: string }, item: string) => {
         acc[item] = item
         return acc
@@ -78,7 +78,7 @@ export const fontSizeOptions = Object.keys(sizes.fontSizes).reduce(
     },
 )
 
-export const iconSizeOptions = Object.keys(sizes.iconSizes).reduce(
+export const iconSizeOptions: any = Object.keys(sizes.iconSizes).reduce(
     (acc: { [key: string]: string }, item: string) => {
         acc[item] = item
         return acc

@@ -6,6 +6,8 @@ type SizeTypes = 'small' | 'medium' | 'large'
 
 type ButtonTypes = 'disabled' | 'primary' | 'transparent'
 
+type HeadingTypes = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6'
+
 type FontSizeType =
     | 'xxSmall'
     | 'xSmall'
@@ -52,4 +54,4 @@ type GlobalColorType =
     | 'red'
 
 type OptionValueType = string | number
-type OptionType = { label: OptionValueType, value: OptionValueType }
+type OptionType = { label: OptionValueType; value: OptionValueType }

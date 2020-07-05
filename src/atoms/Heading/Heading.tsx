@@ -5,25 +5,16 @@ import React from 'react'
 import * as Styled from './styled'
 import type { Props } from './types'
 
-export const textDefaults = {
-    tag: 'h1',
-    weight: 400,
-    size: 'medium',
-    align: 'center',
-    color: 'secondaryExtraDark',
-    hoverColor: 'secondarySemiDark',
-}
-
 /**
  * Component for headers where you can choose which header tag you want to use
  */
 const Heading = ({
-    weight = textDefaults.weight,
-    size = textDefaults.size,
-    color = textDefaults.color,
-    align = textDefaults.align,
+    weight = 400,
+    size = 'medium',
+    color = 'secondaryExtraDark',
+    align = 'center',
     noSelect = false,
-    tag = textDefaults.tag,
+    tag = 'h1',
     children,
     ...rest
 }: Props) => {

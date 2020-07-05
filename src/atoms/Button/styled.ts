@@ -4,7 +4,7 @@ import styled, { css, StyledProps } from 'styled-components'
 
 import { noSelect, ellipsis } from 'consts/styles'
 
-type Props = StyledProps<{
+type SProps = StyledProps<{
     buttonType: ThemeColorTypes
     size: SizeTypes
     disabled?: boolean
@@ -18,7 +18,7 @@ const getDefaultStyles = ({
     size,
     isFlat,
     isFit,
-}: Props) => {
+}: SProps) => {
     const sizes = theme.buttons.sizes[size]
     const colors = theme.buttons.colors[buttonType]
     return css`
@@ -35,7 +35,7 @@ const getDefaultStyles = ({
     `
 }
 
-const getDisabledStyles = ({ disabled }: Props) => {
+const getDisabledStyles = ({ disabled }: SProps) => {
     if (!disabled) return ''
     return css`
         opacity: 0.5;
@@ -46,7 +46,7 @@ const getDisabledStyles = ({ disabled }: Props) => {
     `
 }
 
-const getHoverStyles = ({ buttonType, disabled, theme }: Props) => {
+const getHoverStyles = ({ buttonType, disabled, theme }: SProps) => {
     if (disabled) return ''
     return css`
         &:hover {
@@ -55,7 +55,7 @@ const getHoverStyles = ({ buttonType, disabled, theme }: Props) => {
     `
 }
 
-const getActiveStyles = ({ buttonType, disabled, theme }: Props) => {
+const getActiveStyles = ({ buttonType, disabled, theme }: SProps) => {
     if (disabled) return ''
     return css`
         &:active {
