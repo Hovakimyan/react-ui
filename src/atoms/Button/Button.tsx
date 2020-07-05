@@ -1,15 +1,7 @@
 import React, { ReactElement, PropsWithChildren, FC } from 'react'
 import * as Styled from './styled'
 import { emptyFunction } from 'helpers/methods'
-
-type Props = PropsWithChildren<{
-    type: ThemeColorTypes
-    size: SizeTypes
-    onClick: (event: React.MouseEvent) => void
-    disabled?: boolean
-    isFlat?: boolean
-    isFit?: boolean
-}>
+import { Props } from './types'
 
 const Button: FC<Props> = ({
     type = 'primary',
