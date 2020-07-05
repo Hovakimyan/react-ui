@@ -7,7 +7,7 @@ export const Sample = () => (
     <Text
         ellipsis={boolean('Ellipsis', false)}
         noSelect={boolean('Disable Select', false)}
-        color={select<GlobalColorType>('Color', colorOptions, 'primaryDark')}
+        color={select<IGlobalColors>('Color', colorOptions, 'primaryDark')}
         size={select<FontSizeType>('Size', fontSizeOptions, 'medium')}
     >
         {text('Text', 'Hello Button')}

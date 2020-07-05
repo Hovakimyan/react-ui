@@ -7,7 +7,7 @@ type SProps = PropsWithChildren<
         ellipsis: boolean
         noSelect: boolean
         tag: HeadingTypes
-        color: GlobalColorType
+        color: IGlobalColors
         size: FontSizeType
         weight: number
         align: string

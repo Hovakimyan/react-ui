@@ -5,7 +5,11 @@ import { buttonSizeOptions, colorOptions } from '../../consts/options'
 
 export const Sample = () => (
     <Loading
-        size={select('Size', buttonSizeOptions, 'medium')}
-        color={select('Color', colorOptions, 'secondaryExtraDark')}
+        size={select<SizeTypes>('Size', buttonSizeOptions, 'medium')}
+        color={select<IGlobalColors>(
+            'Color',
+            colorOptions,
+            'secondaryExtraDark',
+        )}
     />
 )

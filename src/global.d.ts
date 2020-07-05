@@ -32,7 +32,7 @@ type IconSizeType =
     | 'xxLarge'
     | number
 
-type GlobalColorType =
+type IGlobalColors =
     | 'white'
     | 'black'
     | 'secondaryExtraDark'

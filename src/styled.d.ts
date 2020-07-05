@@ -2,7 +2,7 @@
 import 'styled-components'
 
 type IColorTypes = {
-    [key in GlobalColorType]: string
+    [key in IGlobalColors]: string
 }
 type IFontSizes = {
     [key in FontSizeType]: string
@@ -38,13 +38,13 @@ type IButtonSizes = {
 
 type IInputColors = {
     [key in 'background' | 'text' | 'label' | 'border']: {
-        active: GlobalColorType
-        disabled: GlobalColorType
+        active: IGlobalColors
+        disabled: IGlobalColors
     }
 }
 type IButtonColors = {
     [key in ButtonTypes]: {
-        color: GlobalColorType
+        color: IGlobalColors
         shadow: string
         normal: string
         hover: string

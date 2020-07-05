@@ -8,7 +8,7 @@ type SProps = PropsWithChildren<
     StyledProps<{
         ellipsis: boolean
         noSelect: boolean
-        color: GlobalColorType
+        color: IGlobalColors
         size: FontSizeType
         weight: number
         align: string

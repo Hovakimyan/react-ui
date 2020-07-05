@@ -1,6 +1,12 @@
 // @flow
 
-import styled, { keyframes, css } from 'styled-components'
+import styled, { keyframes, css, StyledProps } from 'styled-components'
+
+type SProps = StyledProps<{
+    size: SizeTypes | number
+    color: IGlobalColors
+    delay: number
+}>
 
 const rotate = keyframes`
     0% {
@@ -11,24 +17,24 @@ const rotate = keyframes`
     }
 `
 
-const getSize = (theme, size) =>
+const getSize = ({ theme, size }: SProps) =>
     typeof size === 'number'
         ? size
         : theme.loading.sizes[size] || theme.loading.sizes.medium
 
-const getSizes = ({ theme, size }) => {
-    const WH = getSize(theme, size)
+const getSizes = (props: SProps) => {
+    const WH = getSize(props)
     return css`
         width: ${WH}px;
         height: ${WH}px;
     `
 }
 
-const getBoxStyles = ({ theme, size, color }) => {
-    const container = getSize(theme, size)
+const getBoxStyles = (props: SProps) => {
+    const container = getSize(props)
     const border = container / 10
     const WH = container - 2 * border
-    const borderColor = theme.colors[color] || color
+    const borderColor = props.theme.colors[props.color] || props.color
     return css`
         width: ${WH}px;
         height: ${WH}px;
@@ -51,6 +57,6 @@ export const Box = styled.div`
     border-radius: 50%;
     animation: ${rotate} 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     border-style: solid;
-    animation-delay: ${({ delay }) => delay}s;
+    animation-delay: ${({ delay }: SProps) => delay}s;
     ${getBoxStyles};
 `
