@@ -38,13 +38,13 @@ type IButtonSizes = {
 
 type IInputColors = {
     [key in 'background' | 'text' | 'label' | 'border']: {
-        active: IGlobalColors
-        disabled: IGlobalColors
+        active: string
+        disabled: string
     }
 }
 type IButtonColors = {
     [key in ButtonTypes]: {
-        color: IGlobalColors
+        color: string
         shadow: string
         normal: string
         hover: string

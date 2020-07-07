@@ -1,5 +1,6 @@
 import { hexToRgbA } from 'helpers/color'
 import { ColorTypes } from './types'
+import { IButtonColors, IInputColors } from '../styled'
 
 const regularColors = {
     white: '#FFFFFF',
@@ -54,7 +55,7 @@ export const dark: ColorTypes = {
     secondaryUltraLight: '#EDEFF6',
 }
 
-export const getButtonStyles = (colors: ColorTypes) => ({
+export const getButtonStyles = (colors: ColorTypes): IButtonColors => ({
     disabled: {
         color: colors.secondarySemiLight,
         shadow: 'none',
@@ -87,7 +88,7 @@ export const getCardShadow = (
     dense: `0px 3px 6px 0px ${hexToRgbA(colors.primaryExtraDark, 20)};`,
 })
 
-export const getInputColors = (colors: ColorTypes) => ({
+export const getInputColors = (colors: ColorTypes): IInputColors => ({
     border: {
         active: colors.secondary,
         disabled: colors.secondaryExtraLight,

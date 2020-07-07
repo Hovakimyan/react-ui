@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import * as sizes from './sizes'
-import { ThemeProvider } from 'styled-components'
+import { ThemeProvider, DefaultTheme } from 'styled-components'
 import { options } from 'consts'
 import { Props, ColorTypes } from './types'
 import {
@@ -21,7 +21,7 @@ const themes: {
     dark,
 }
 
-const getTheme = (theme: ThemeTypes): any => {
+const getTheme = (theme: ThemeTypes): DefaultTheme => {
     const colors = themes[theme]
     return {
         fonts: {
@@ -49,7 +49,7 @@ const getTheme = (theme: ThemeTypes): any => {
     }
 }
 
-const Theme = ({ children }: Props) => {
+const Theme = ({ children }: Props): ReactElement => {
     return (
         <ThemeProvider
             theme={getTheme(select('Theme', options.themeOptions, 'light'))}
