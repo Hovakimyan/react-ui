@@ -31,10 +31,8 @@ const name = `${argv.name.charAt(0).toUpperCase()}${argv.name.slice(1)}`
 const getItemsList = (name) => {
     return [
         {
-            name,
-            content: `// @flow
-
-import React from 'react'
+            name: `${name}.tsx`,
+            content: `import React from 'react'
 import * as Styled from './styled'
 
 type Props = {
@@ -49,12 +47,12 @@ export default ${name}
 `,
         },
         {
-            name: 'index',
+            name: 'index.ts',
             content: `import ${name} from './${name}'
 export { ${name} }`,
         },
         {
-            name: 'stories',
+            name: 'stories.tsx',
             content: `
             import React from 'react'
 import { ${name} } from './index'
@@ -89,10 +87,8 @@ import { Sample } from './stories'
             `,
         },
         {
-            name: 'styled',
-            content: `// @flow
-
-import styled from 'styled-components'
+            name: 'styled.ts',
+            content: `import styled from 'styled-components'
 
 export const ${name} = styled.div\`
     display: flex;
@@ -106,7 +102,7 @@ function addRequiredFilesToFolder(dir, name) {
     const list = getItemsList(name)
 
     list.forEach((item) => {
-        fs.appendFileSync(`${dir}/${item.name}.js`, item.content)
+        fs.appendFileSync(`${dir}/${item.name}`, item.content)
     })
 
     console.log(`Folder with data created, please check directory ${dir}`)
