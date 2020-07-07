@@ -18,7 +18,7 @@ const getEllipsis = ({ ellipsis }: SProps) => (ellipsis ? styles.ellipsis : '')
 const getSelection = ({ noSelect }: SProps) => (noSelect ? styles.noSelect : '')
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-export const Heading = styled(({ tag, children, ...props }: astatny) =>
+export const Heading = styled(({ tag, children, ...props }: any) =>
     createElement(tag, props, children)
 )`
     margin: 0;

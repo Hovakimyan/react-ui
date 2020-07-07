@@ -12,7 +12,7 @@ if (
     argv.type !== 'organism'
 ) {
     console.log(
-        'Please use one of required types (atoms | molecules | organism)',
+        'Please use one of required types (atoms | molecules | organism)'
     )
     process.exit()
 }
