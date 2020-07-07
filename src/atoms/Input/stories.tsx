@@ -1,9 +1,9 @@
-import React, { ChangeEvent, useState } from 'react'
+import React, { ChangeEvent, ReactElement, useState } from 'react'
 import { Input } from './index'
 import { boolean, select } from '@storybook/addon-knobs'
 import { buttonSizeOptions } from 'consts/options'
 
-export const Sample = () => {
+export const Sample = (): ReactElement => {
     const [value, setValue] = useState('')
     return (
         <Input

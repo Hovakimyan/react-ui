@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import * as Styled from './styled'
 import type { Props } from './types'
 
@@ -11,7 +11,7 @@ const Text = ({
     ellipsis = false,
     children,
     ...rest
-}: Props) => {
+}: Props): ReactElement => {
     return (
         <Styled.Text
             {...rest}

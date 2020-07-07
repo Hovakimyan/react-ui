@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import * as Styled from './styled'
 import type { Props } from './types'
 
@@ -7,7 +7,7 @@ const Paper = ({
     shadow = 'shallow',
     children,
     ...rest
-}: Props) => (
+}: Props): ReactElement => (
     <Styled.Paper {...rest} corner={corner} shadow={shadow}>
         {children}
     </Styled.Paper>

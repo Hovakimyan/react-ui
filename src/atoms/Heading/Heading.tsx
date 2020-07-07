@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import * as Styled from './styled'
 import type { Props } from './types'
 
@@ -14,7 +14,7 @@ const Heading = ({
     tag = 'h1',
     children,
     ...rest
-}: Props) => {
+}: Props): ReactElement => {
     return (
         <Styled.Heading
             {...rest}

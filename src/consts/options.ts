@@ -22,17 +22,23 @@ export const themeOptions: {
     Dark: 'dark',
 }
 
-export const cornerOptions: any = {
+export const cornerOptions: {
+    [key in 'Rounded' | 'Sharp']: ICardsCorners
+} = {
     Rounded: 'rounded',
     Sharp: 'sharp',
 }
 
-export const shadowOptions: any = {
+export const shadowOptions: {
+    [key in 'Dense' | 'Shallow']: ICardsShadows
+} = {
     Dense: 'dense',
     Shallow: 'shallow',
 }
 
-export const headingOptions: any = {
+export const headingOptions: {
+    [key in 'H1' | 'H2' | 'H3' | 'H4' | 'H5' | 'H6']: HeadingTypes
+} = {
     H1: 'h1',
     H2: 'h2',
     H3: 'h3',
@@ -41,7 +47,9 @@ export const headingOptions: any = {
     H6: 'h6',
 }
 
-export const colorOptions: any = {
+export const colorOptions: {
+    [key in IGlobalColors]: IGlobalColors
+} = {
     primaryExtraDark: 'primaryExtraDark',
     primaryDark: 'primaryDark',
     primarySemiDark: 'primarySemiDark',
@@ -65,20 +73,10 @@ export const colorOptions: any = {
     coral: 'coral',
     cyan: 'cyan',
     red: 'red',
-    None: '',
 }
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const fontSizeOptions: any = Object.keys(sizes.fontSizes).reduce(
-    (acc: { [key: string]: string }, item: string) => {
-        acc[item] = item
-        return acc
-    },
-    {
-        None: '',
-    }
-)
-
-export const iconSizeOptions: any = Object.keys(sizes.iconSizes).reduce(
     (acc: { [key: string]: string }, item: string) => {
         acc[item] = item
         return acc
