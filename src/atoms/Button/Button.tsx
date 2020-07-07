@@ -1,4 +1,4 @@
-import React, { ReactElement, PropsWithChildren, FC } from 'react'
+import React, { ReactElement, FC } from 'react'
 import * as Styled from './styled'
 import { emptyFunction } from 'helpers/methods'
 import { Props } from './types'

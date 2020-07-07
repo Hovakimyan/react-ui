@@ -1,4 +1,7 @@
-export const hexToRgbA = (colorHex: string, percent: number): string | undefined => {
+export const hexToRgbA = (
+    colorHex: string,
+    percent: number,
+): string | undefined => {
     if (/^#([A-Fa-f0-9]{3}){1,2}$/.test(colorHex)) {
         let hex = colorHex.substring(1).split('')
         if (hex.length === 3) {
@@ -7,9 +10,11 @@ export const hexToRgbA = (colorHex: string, percent: number): string | undefined
 
         const hexVal = Number(`0x${hex.join('')}`)
 
-        return `rgba(${[(hexVal >> 16) & 255, (hexVal >> 8) & 255, hexVal & 255].join(
-            ','
-        )},${percent / 100})`
+        return `rgba(${[
+            (hexVal >> 16) & 255,
+            (hexVal >> 8) & 255,
+            hexVal & 255,
+        ].join(',')},${percent / 100})`
     }
     throw new Error('Bad Hex')
 }

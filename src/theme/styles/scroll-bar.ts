@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
-export default createGlobalStyle<{transparent?: boolean}>`
+export default createGlobalStyle<{ transparent?: boolean }>`
     ::-webkit-scrollbar {
         background-color: ${({ transparent, theme }) =>
             transparent ? 'transparent' : theme.colors.primaryExtraLight};
