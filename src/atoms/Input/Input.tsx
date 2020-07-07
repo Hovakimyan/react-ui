@@ -1,25 +1,23 @@
 // @flow
 
-import React from 'react'
+import React, { ReactElement } from 'react'
 import * as Styled from './styled'
 import type { Props } from './types'
 
 const Input = ({
     onChange,
     value,
+    placeholder = '',
     size = 'medium',
-    refHandler = () => {},
     disabled = false,
     isFlat = false,
     isFit = false,
-    ...rest
-}: Props) => {
+}: Props): ReactElement => {
     return (
         <Styled.Input
-            {...rest}
+            placeholder={placeholder}
             onChange={onChange}
             value={value}
-            ref={refHandler}
             size={size}
             disabled={disabled}
             isFlat={isFlat}

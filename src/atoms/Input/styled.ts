@@ -1,9 +1,17 @@
 // @flow
 
-import styled, { css } from 'styled-components'
+import styled, { css, StyledProps } from 'styled-components'
 import { noSelect, ellipsis } from 'consts/styles'
 
-const getDefaultStyles = ({ size, theme, isFlat, isFit, weight }) => {
+type SProps = StyledProps<{
+    size: SizeTypes
+    value: string
+    disabled: boolean
+    isFlat: boolean
+    isFit: boolean
+}>
+
+const getDefaultStyles = ({ size, theme, isFlat, isFit }: SProps) => {
     const sizes = theme.inputs.sizes[size]
     const colors = theme.inputs.colors
     return css`
@@ -14,12 +22,12 @@ const getDefaultStyles = ({ size, theme, isFlat, isFit, weight }) => {
         font-size: ${sizes.fontSize};
         background: ${colors.background.active};
         border-radius: ${isFlat ? 0 : sizes.borderRadius};
-        font-weight: ${weight};
+        font-weight: 400;
         flex-grow: ${isFit ? 1 : 0};
     `
 }
 
-const getDisabledStyles = ({ disabled, theme }) => {
+const getDisabledStyles = ({ disabled, theme }: SProps) => {
     if (!disabled) return ''
     const colors = theme.inputs.colors
     return css`
