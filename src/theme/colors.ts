@@ -79,7 +79,7 @@ export const getButtonStyles = (colors: ColorTypes) => ({
 })
 
 export const getCardShadow = (
-    colors: ColorTypes,
+    colors: ColorTypes
 ): {
     [key in ICardsShadows]: string
 } => ({

@@ -9,7 +9,7 @@ export const Sample = () => (
         color={select<IGlobalColors>(
             'Color',
             colorOptions,
-            'secondaryExtraDark',
+            'secondaryExtraDark'
         )}
     />
 )

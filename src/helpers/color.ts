@@ -1,6 +1,6 @@
 export const hexToRgbA = (
     colorHex: string,
-    percent: number,
+    percent: number
 ): string | undefined => {
     if (/^#([A-Fa-f0-9]{3}){1,2}$/.test(colorHex)) {
         let hex = colorHex.substring(1).split('')

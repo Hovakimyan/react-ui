@@ -18,7 +18,7 @@ const getEllipsis = ({ ellipsis }: SProps) => (ellipsis ? styles.ellipsis : '')
 const getSelection = ({ noSelect }: SProps) => (noSelect ? styles.noSelect : '')
 
 export const Heading = styled(({ tag, children, ...props }: any) =>
-    createElement(tag, props, children),
+    createElement(tag, props, children)
 )`
     margin: 0;
     display: block;

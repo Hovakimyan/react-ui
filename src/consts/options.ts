@@ -75,7 +75,7 @@ export const fontSizeOptions: any = Object.keys(sizes.fontSizes).reduce(
     },
     {
         None: '',
-    },
+    }
 )
 
 export const iconSizeOptions: any = Object.keys(sizes.iconSizes).reduce(
@@ -85,5 +85,5 @@ export const iconSizeOptions: any = Object.keys(sizes.iconSizes).reduce(
     },
     {
         None: '',
-    },
+    }
 )
