@@ -1,6 +1,6 @@
 // @flow
 
-import React from 'react'
+import React, { ReactElement } from 'react'
 import * as Styled from './styled'
 import type { Props } from './types'
 
@@ -9,7 +9,7 @@ const Link = ({
     target = '_self',
     children,
     ...rest
-}: Props): React$Node => {
+}: Props): ReactElement => {
     return (
         <Styled.Link {...rest} href={href} target={target}>
             {children}
