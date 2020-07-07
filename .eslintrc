@@ -1,50 +1,37 @@
 {
-    "extends": [
-        "eslint:recommended",
-        "plugin:json/recommended",
-        "plugin:import/errors",
-        "plugin:import/warnings",
-        "plugin:flowtype/recommended",
-        "plugin:react/recommended",
-        "prettier"
-    ],
-    "rules": {
-        "react/display-name": 0,
-        "react-hooks/rules-of-hooks": "error",
-        "complexity": ["error", { "max": 15 }],
-        "comma-dangle": ["error", "always-multiline"]
-    },
-    "globals": {
-        "GLOBALS": false,
-        "configure": false,
-        "localDevBackend": false,
-        "mount": false,
-        "React": false,
-        "render": false,
-        "shallow": false
-    },
-    "plugins": ["react", "flowtype", "prettier", "react-hooks"],
-    "parser": "babel-eslint",
+    "parser": "@typescript-eslint/parser",
     "parserOptions": {
+        "ecmaVersion": 2020,
         "sourceType": "module",
         "ecmaFeatures": {
             "jsx": true,
             "es6": true
         }
     },
-    "env": {
-        "es6": true,
-        "node": true,
-        "browser": true
-    },
     "settings": {
-        "import/resolver": {
-            "alias": [
-                ["atoms", "./src/atoms"],
-                ["theme", "./src/theme"],
-                ["helpers", "./src/helpers"],
-                ["consts", "./src/consts"]
-            ]
+        "react": {
+            "version": "detect"
         }
-    }
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "prettier/@typescript-eslint",
+        "plugin:prettier/recommended"
+    ],
+    "rules": {
+        "react/display-name": 0,
+        "react-hooks/rules-of-hooks": "error",
+        "complexity": ["error", { "max": 15 }],
+        "comma-dangle": [
+            "error",
+            {
+                "arrays": "always-multiline",
+                "objects": "always-multiline",
+                "imports": "always-multiline",
+                "exports": "always-multiline"
+            }
+        ]
+    },
+    "plugins": ["@typescript-eslint", "react", "react-hooks", "prettier"]
 }

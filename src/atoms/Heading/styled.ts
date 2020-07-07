@@ -1,0 +1,32 @@
+import { createElement, PropsWithChildren } from 'react'
+import styled, { StyledProps } from 'styled-components'
+import { styles } from 'consts'
+
+type SProps = PropsWithChildren<
+    StyledProps<{
+        ellipsis: boolean
+        noSelect: boolean
+        tag: HeadingTypes
+        color: IGlobalColors
+        size: FontSizeType
+        weight: number
+        align: string
+    }>
+>
+
+const getEllipsis = ({ ellipsis }: SProps) => (ellipsis ? styles.ellipsis : '')
+const getSelection = ({ noSelect }: SProps) => (noSelect ? styles.noSelect : '')
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export const Heading = styled(({ tag, children, ...props }: astatny) =>
+    createElement(tag, props, children)
+)`
+    margin: 0;
+    display: block;
+    color: ${({ color, theme }) => theme.colors[color]};
+    font-size: ${({ size, theme }) => theme.fonts.sizes[size] || `${size}px`};
+    font-weight: ${({ weight }) => weight};
+    text-align: ${({ align }) => align};
+    ${getEllipsis};
+    ${getSelection};
+`

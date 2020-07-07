@@ -1,17 +1,24 @@
-import { Preview, Meta, Props, Story, Description, Source } from "@storybook/addon-docs/blocks";
+import {
+    Preview,
+    Meta,
+    Props,
+    Story,
+    Description,
+    Source,
+} from '@storybook/addon-docs/blocks'
 import { Heading } from './index'
 import { Sample } from './stories'
 
 <Meta title="Atoms|Heading" component={Heading} />
 
-<Description of={Heading}/>
+<Description of={Heading} />
 
 <Preview>
-    <Story name='sample'>
+    <Story name="sample">
         <Sample />
     </Story>
 </Preview>
 
 ## Properties
 
-<Props of={Heading}/>
+<Props of={Heading} />
