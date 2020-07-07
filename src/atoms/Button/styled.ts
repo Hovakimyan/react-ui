@@ -1,5 +1,3 @@
-// @flow
-
 import styled, { css, StyledProps } from 'styled-components'
 
 import { noSelect, ellipsis } from 'consts/styles'

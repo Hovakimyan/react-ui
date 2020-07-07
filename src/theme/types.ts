@@ -1,9 +1,3 @@
-// @flow
-
-export type Props = {
-    children: any
-}
-
 export type ColorTypes = {
     white: string
     black: string

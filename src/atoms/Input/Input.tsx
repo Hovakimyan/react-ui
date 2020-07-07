@@ -1,6 +1,4 @@
-// @flow
-
-import React, { ReactElement } from 'react'
+import React from 'react'
 import * as Styled from './styled'
 import type { Props } from './types'
 
@@ -12,9 +10,11 @@ const Input = ({
     disabled = false,
     isFlat = false,
     isFit = false,
-}: Props): ReactElement => {
+    ...rest
+}: Props) => {
     return (
         <Styled.Input
+            {...rest}
             placeholder={placeholder}
             onChange={onChange}
             value={value}

@@ -1,6 +1,3 @@
-// @flow
-// import { Preview, Meta, Props, Story, Source } from "@storybook/addon-docs/blocks";
-
 import React from 'react'
 import * as Styled from './styled'
 import type { Props } from './types'

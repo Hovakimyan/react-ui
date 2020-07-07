@@ -1,5 +1,3 @@
-// @flow
-
 import React, { ReactElement } from 'react'
 import * as Styled from './styled'
 import type { Props } from './types'

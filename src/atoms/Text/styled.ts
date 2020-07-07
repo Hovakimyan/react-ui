@@ -1,5 +1,3 @@
-// @flow
-
 import styled, { StyledProps } from 'styled-components'
 import { styles } from 'consts'
 import { PropsWithChildren } from 'react'

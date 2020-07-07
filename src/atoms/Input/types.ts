@@ -1,12 +1,11 @@
-// @flow
+import {PropsWithChildren} from "react";
 
-export type Props = {
-    onChange: Function,
+export type Props = PropsWithChildren<{
+    onChange: any,
     value: string,
     placeholder?: string,
     size?: SizeTypes,
-    refHandler?: Function,
     disabled?: boolean,
     isFlat?: boolean,
     isFit?: boolean
-}
+}>

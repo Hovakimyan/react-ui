@@ -1,5 +1,3 @@
-// @flow
-
 import styled, { keyframes, css, StyledProps } from 'styled-components'
 
 type SProps = StyledProps<{

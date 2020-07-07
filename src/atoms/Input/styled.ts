@@ -1,7 +1,6 @@
-// @flow
-
 import styled, { css, StyledProps } from 'styled-components'
 import { noSelect, ellipsis } from 'consts/styles'
+import { ReactElement } from 'react'
 
 type SProps = StyledProps<{
     size: SizeTypes
