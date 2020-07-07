@@ -1,11 +1,11 @@
-import {PropsWithChildren} from "react";
+import { PropsWithChildren, ChangeEvent } from 'react'
 
 export type Props = PropsWithChildren<{
-    onChange: any,
-    value: string,
-    placeholder?: string,
-    size?: SizeTypes,
-    disabled?: boolean,
-    isFlat?: boolean,
+    onChange: (e: ChangeEvent<HTMLInputElement>) => void
+    value: string
+    placeholder?: string
+    size?: SizeTypes
+    disabled?: boolean
+    isFlat?: boolean
     isFit?: boolean
 }>

@@ -1,10 +1,15 @@
 import styled, { keyframes, css, StyledProps } from 'styled-components'
 
-type SProps = StyledProps<{
+type IWrapper = StyledProps<{
     size: SizeTypes | number
-    color: IGlobalColors
-    delay: number
 }>
+
+type SProps = StyledProps<
+    IWrapper & {
+        color: IGlobalColors
+        delay: number
+    }
+>
 
 const rotate = keyframes`
     0% {
@@ -15,12 +20,12 @@ const rotate = keyframes`
     }
 `
 
-const getSize = ({ theme, size }: SProps) =>
+const getSize = ({ theme, size }: IWrapper) =>
     typeof size === 'number'
         ? size
         : theme.loading.sizes[size] || theme.loading.sizes.medium
 
-const getSizes = (props: SProps) => {
+const getSizes = (props: IWrapper) => {
     const WH = getSize(props)
     return css`
         width: ${WH}px;
@@ -42,7 +47,7 @@ const getBoxStyles = (props: SProps) => {
     `
 }
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div<IWrapper>`
     display: inline-block;
     position: relative;
     ${getSizes};

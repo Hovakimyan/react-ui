@@ -1,6 +1,5 @@
 import styled, { css, StyledProps } from 'styled-components'
 import { noSelect, ellipsis } from 'consts/styles'
-import { ReactElement } from 'react'
 
 type SProps = StyledProps<{
     size: SizeTypes
@@ -10,9 +9,9 @@ type SProps = StyledProps<{
     isFit: boolean
 }>
 
-const getDefaultStyles = ({ size, theme, isFlat, isFit }: SProps) => {
-    const sizes = theme.inputs.sizes[size]
-    const colors = theme.inputs.colors
+const getDefaultStyles = (props: SProps) => {
+    const sizes = props.theme.inputs.sizes[props.size]
+    const colors = props.theme.inputs.colors
     return css`
         color: ${colors.text.active};
         border: 1px solid ${colors.border.active};
@@ -20,15 +19,15 @@ const getDefaultStyles = ({ size, theme, isFlat, isFit }: SProps) => {
         padding: ${sizes.padding};
         font-size: ${sizes.fontSize};
         background: ${colors.background.active};
-        border-radius: ${isFlat ? 0 : sizes.borderRadius};
+        border-radius: ${props.isFlat ? 0 : sizes.borderRadius};
         font-weight: 400;
-        flex-grow: ${isFit ? 1 : 0};
+        flex-grow: ${props.isFit ? 1 : 0};
     `
 }
 
-const getDisabledStyles = ({ disabled, theme }: SProps) => {
-    if (!disabled) return ''
-    const colors = theme.inputs.colors
+const getDisabledStyles = (props: SProps) => {
+    if (!props.disabled) return ''
+    const colors = props.theme.inputs.colors
     return css`
         ${noSelect};
         ${ellipsis};

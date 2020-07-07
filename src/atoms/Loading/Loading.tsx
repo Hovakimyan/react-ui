@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { ReactElement } from 'react'
 import * as Styled from './styled'
 import type { Props } from './types'
 
-const Loading = ({ size = 'medium', color = 'white' }: Props) => {
+const Loading = ({ size = 'medium', color = 'white' }: Props): ReactElement => {
     return (
         <Styled.Wrapper size={size}>
             <Styled.Box size={size} color={color} delay={0} />

@@ -1,8 +1,8 @@
 import React from 'react'
 import * as sizes from './sizes'
 import { ThemeProvider } from 'styled-components'
-import type {ColorTypes, Props} from './types'
 import { options } from 'consts'
+import { Props, ColorTypes } from './types'
 import {
     light,
     dark,
