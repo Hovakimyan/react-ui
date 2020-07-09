@@ -65,7 +65,7 @@
         "react-docgen-typescript-loader": "^3.7.2",
         "storybook-addon-jsx": "7.3.0",
         "storybook-addon-react-docgen": "^1.2.40",
-        "ts-loader": "^7.0.5",
+        "ts-loader": "^8.0.0",
         "typescript": "^3.9.6",
         "yargs": "15.4.0"
     },
