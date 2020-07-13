@@ -67,7 +67,7 @@
         "storybook-addon-react-docgen": "^1.2.40",
         "ts-loader": "^8.0.0",
         "typescript": "^3.9.6",
-        "yargs": "15.4.0"
+        "yargs": "15.4.1"
     },
     "dependencies": {
         "@hovakimyan/icons": "^1.0.3",
