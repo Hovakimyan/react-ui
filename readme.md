@@ -20,7 +20,7 @@ Project created with Atomic structure
 -   Organism
 -   helpers // helper methods
 
-For Typing we use `TS`
+For Typing we use `TypeScript`
 
 ## How to create components
 
