@@ -4,12 +4,13 @@ import list from './list'
 
 type Props = {
     name: TIconNames
+    title: string
 }
 
-const Icon = ({ name }: Props) => {
+const Icon = ({ name, title }: Props) => {
     const SelectedComponent = list[name]
     return (
-        <Styled.Icon>
+        <Styled.Icon title={title}>
             <React.Suspense fallback={<div>loading..</div>}>
                 <SelectedComponent />
             </React.Suspense>
