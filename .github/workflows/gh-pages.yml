@@ -24,5 +24,5 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Storybook deploy
-        run: yarn
-        run: yarn run deploy
+      - run: yarn
+      - run: npm run deploy
