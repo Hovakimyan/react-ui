@@ -6,10 +6,6 @@ import { buttonSizeOptions, colorOptions } from '../../consts/options'
 export const Sample = (): ReactElement => (
     <Loading
         size={select<SizeTypes>('Size', buttonSizeOptions, 'medium')}
-        color={select<IGlobalColors>(
-            'Color',
-            colorOptions,
-            'secondaryExtraDark'
-        )}
+        color={select<IGlobalColors>('Color', colorOptions, 'secondaryExtraDark')}
     />
 )

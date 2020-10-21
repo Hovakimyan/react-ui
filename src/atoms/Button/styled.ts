@@ -10,13 +10,7 @@ type SProps = StyledProps<{
     isFit?: boolean
 }>
 
-const getDefaultStyles = ({
-    theme,
-    buttonType,
-    size,
-    isFlat,
-    isFit,
-}: SProps) => {
+const getDefaultStyles = ({ theme, buttonType, size, isFlat, isFit }: SProps) => {
     const sizes = theme.buttons.sizes[size]
     const colors = theme.buttons.colors[buttonType]
     return css`

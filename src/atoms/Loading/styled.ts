@@ -21,9 +21,7 @@ const rotate = keyframes`
 `
 
 const getSize = ({ theme, size }: IWrapper) =>
-    typeof size === 'number'
-        ? size
-        : theme.loading.sizes[size] || theme.loading.sizes.medium
+    typeof size === 'number' ? size : theme.loading.sizes[size] || theme.loading.sizes.medium
 
 const getSizes = (props: IWrapper) => {
     const WH = getSize(props)

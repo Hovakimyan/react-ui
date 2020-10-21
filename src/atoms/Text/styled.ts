@@ -20,8 +20,7 @@ export const Text = styled.p`
     margin: 0;
     display: block;
     color: ${({ color, theme }: SProps) => theme.colors[color]};
-    font-size: ${({ size, theme }: SProps) =>
-        theme.fonts.sizes[size] || `${size}px`};
+    font-size: ${({ size, theme }: SProps) => theme.fonts.sizes[size] || `${size}px`};
     font-weight: ${({ weight }: SProps) => weight};
     text-align: ${({ align }: SProps) => align};
     ${getEllipsis};

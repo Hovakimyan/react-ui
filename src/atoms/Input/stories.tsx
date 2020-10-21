@@ -8,9 +8,7 @@ export const Sample = (): ReactElement => {
     return (
         <Input
             // required
-            onChange={(e: ChangeEvent<HTMLInputElement>) =>
-                setValue(e.target.value)
-            }
+            onChange={(e: ChangeEvent<HTMLInputElement>) => setValue(e.target.value)}
             value={value}
             placeholder="write text"
             size={select<SizeTypes>('Size', buttonSizeOptions, 'medium')}
