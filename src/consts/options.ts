@@ -11,7 +11,7 @@ export const iconNameOptions: {
     [key: string]: TIconNames
 } = {
     domain: 'domain',
-    notifications: 'notifications',
+    email: 'email',
 }
 
 export const buttonSizeOptions: {

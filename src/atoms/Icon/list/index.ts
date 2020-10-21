@@ -1,9 +1,9 @@
 import React from 'react'
 
 const Domain = React.lazy(() => import('./Domain'))
-const Notifications = React.lazy(() => import('./Notifications'))
+const Email = React.lazy(() => import('./Email'))
 
 export default {
     domain: Domain,
-    notifications: Notifications,
+    email: Email,
 }

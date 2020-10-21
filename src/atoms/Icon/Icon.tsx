@@ -7,7 +7,6 @@ type Props = {
 }
 
 const Icon = ({ name }: Props) => {
-    console.log('name :::', name)
     const SelectedComponent = list[name]
     return (
         <Styled.Icon>

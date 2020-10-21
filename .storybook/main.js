@@ -6,7 +6,14 @@ module.exports = {
     stories: ['../src/**/**/*.stories.(mdx)'],
     addons: [
         '@storybook/preset-typescript',
-        '@storybook/addon-docs',
+        {
+            name: '@storybook/addon-docs',
+            options: {
+                configureJSX: true,
+                babelOptions: {},
+                sourceLoaderOptions: null,
+            },
+        },
         '@storybook/addon-knobs',
         '@storybook/addon-viewport',
         '@storybook/addon-notes',
