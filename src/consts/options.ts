@@ -7,6 +7,13 @@ export const buttonTypeOptions: {
     transparent: 'transparent',
 }
 
+export const iconNameOptions: {
+    [key: string]: TIconNames
+} = {
+    domain: 'domain',
+    notifications: 'notifications',
+}
+
 export const buttonSizeOptions: {
     [key: string]: SizeTypes
 } = {

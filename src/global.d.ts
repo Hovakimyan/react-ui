@@ -57,5 +57,7 @@ type IGlobalColors =
     | 'cyan'
     | 'red'
 
+type TIconNames = 'domain' | 'notifications'
+
 type OptionValueType = string | number
 type OptionType = { label: OptionValueType; value: OptionValueType }
